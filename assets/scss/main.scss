@@ -1,0 +1,12 @@
+// utils
+@use 'utils/index' as *;
+
+// base
+@use 'base/index' as *;
+
+// pages
+@use 'pages/index' as *;
+
+body {
+  background-color: #f7f8fa;
+}
