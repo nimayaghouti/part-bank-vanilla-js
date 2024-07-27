@@ -1,13 +1,1 @@
-{
-  "version": 3,
-  "sourceRoot": "",
-  "sources": [
-    "../scss/utils/_fonts.scss",
-    "../scss/base/_reset.scss",
-    "../scss/base/_typography.scss",
-    "../scss/main.scss"
-  ],
-  "names": [],
-  "mappings": "AACA;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAKA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAKA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AC1FF;EACE;EACA;EACA;;;ACHF;EACE;EACA;EACA;;;ACMF;EACE",
-  "file": "main.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/utils/_fonts.scss","../scss/base/_reset.scss","../scss/base/_typography.scss","../scss/main.scss"],"names":[],"mappings":"AACA;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAKA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AAGF;EACE;EACA;EAKA;EACA;;AAGF;EACE;EACA;EAIA;EACA;;AC1FF;EACE;EACA;EACA;;;ACHF;EACE;EACA;EACA;;;ACMF;EACE;;;AAGF;EAEI;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAIA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAIA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAIA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA","file":"main.css"}
