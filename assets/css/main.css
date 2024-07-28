@@ -64,8 +64,54 @@ html {
   direction: rtl;
 }
 
-body {
-  background-color: #f7f8fa;
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-background {
+  background: url("../image/login-background.png") no-repeat center center;
+  background-color: lightgray;
+  background-size: cover;
+}
+
+.login {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 90vh;
+  max-height: 840px;
+  background-color: #fff;
+  border-radius: 1.25rem;
+}
+.login__form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login__image {
+  padding: 1.25rem;
+}
+.login__image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.login__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 :root {
@@ -109,6 +155,10 @@ body {
   --success-700: #008857;
   --success-800: #006943;
   --success-900: #005033;
+}
+
+body {
+  background-color: #f7f8fa;
 }
 
 /*# sourceMappingURL=main.css.map */
