@@ -28,7 +28,7 @@ submitButton.addEventListener('click', event => {
   submitSpinner.classList.add('submit__spinner_loading');
 
   setTimeout(() => {
-    submitBtn.disabled = false;
+    submitButton.disabled = false;
     submitText.classList.remove('submit__text_loading');
     submitSpinner.classList.remove('submit__spinner_loading');
 
