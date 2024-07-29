@@ -1,33 +1,44 @@
-@use '../utils/mixins' as *;
+@use "../utils/mixins" as *;
 
-.login-background {
-  background: url('../image/login-background.png') no-repeat center center;
+.container {
+  background: url("../image/login-background.png") no-repeat center center;
   background-color: lightgray;
   background-size: cover;
 }
 
 .login {
   display: flex;
+  gap: 1.25rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #fff;
   width: 90%;
   max-width: 1200px;
   height: 90vh;
   max-height: 840px;
-  background-color: #fff;
-  border-radius: 1.25rem;
 
-  &__form {
+  &__form-wrapper {
     width: 50%;
     @include flex($direction: column);
+    padding: 1rem 0;
   }
 
-  &__image {
-    padding: 1.25rem;
+  &__form {
+    margin-top: 3.5rem;
+  }
+
+  &__logo {
+    width: 45%;
+    margin-top: 1rem;
+  }
+
+  &__support {
+    font-size: 0.75rem;
+    margin-top: auto;
   }
 
   &__image-wrapper {
-    width: 100%;
-    height: 100%;
-    @include flex();
+    width: 50%;
     border-radius: 0.75rem;
     overflow: hidden;
 
@@ -36,5 +47,60 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+.form {
+  $input-color: #f9fafb;
+  width: 60%;
+
+  &__input,
+  &__submit {
+    border-radius: 0.4rem;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  &__input {
+    background-color: $input-color;
+    margin-bottom: 1.25rem;
+
+    &:focus {
+      outline: 1px dashed var(--primary-50);
+    }
+  }
+
+  &__submit {
+    color: white;
+    background-color: var(--primary-500);
+    cursor: pointer;
+    margin-top: 0.75rem;
+
+    &:active {
+      background-color: var(--primary-900);
+    }
+  }
+
+  &__pass-wrapper {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  &__eye {
+    position: absolute;
+    top: 50%;
+    left: 0.25rem;
+    transform: translate(0, -50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    background: url("../svg/icons/outline/eye-closed.svg"), $input-color;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
