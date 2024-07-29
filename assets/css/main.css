@@ -218,4 +218,42 @@ html {
   background-repeat: no-repeat;
 }
 
+.submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.submit__text {
+  display: block;
+}
+.submit__text_loading {
+  display: none;
+}
+.submit__spinner {
+  width: 25px;
+  height: 25px;
+  border: 4px solid white;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate 1s linear infinite;
+  display: none;
+}
+.submit__spinner_loading {
+  display: block;
+}
+.submit:disabled {
+  background-color: var(--primary-300);
+  cursor: not-allowed;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
