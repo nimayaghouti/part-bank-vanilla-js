@@ -8,14 +8,53 @@
   </head>
   <body>
     <main class="container login-background">
+      <!-- Block - 1 - Start -->
       <div class="login">
-        <div class="login__form"></div>
-        <div class="login__image">
-          <div class="login__image-wrapper">
-            <img src="./assets/image/login-image.png" alt="login image" />
+        <div class="login__form-wrapper">
+          <img
+            class="login__logo"
+            src="./assets/svg/logos/logo-with-text.svg"
+            alt="part bank logo"
+          />
+
+          <!-- Block - 2 - Start -->
+          <form class="login__form form">
+            <label for="phone">شماره همراه</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="phone"
+              placeholder="مثلا ۰۹۱۲۳۴۵۶۷۸۹"
+              pattern="[0-9]{11}"
+              autofocus
+              required
+            />
+            <label for="pass">رمز عبور</label>
+            <div class="form__pass-wrapper">
+              <input
+                class="form__input"
+                type="password"
+                id="pass"
+                placeholder="رمز عبور"
+                required
+              />
+              <span class="form__eye"></span>
+            </div>
+            <button class="form__submit" type="submit">ورود</button>
+          </form>
+          <!-- Block - 2 - End -->
+
+          <div class="login__support">
+            <span>پشتیبانی:</span> &nbsp;
+            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
           </div>
         </div>
+
+        <div class="login__image-wrapper">
+          <img src="./assets/image/login-image.png" alt="login image" />
+        </div>
       </div>
+      <!-- Block - 1 - End -->
     </main>
     <script src="./assets/scripts/main.js"></script>
   </body>
