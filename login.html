@@ -19,27 +19,31 @@
 
           <!-- Block - 2 - Start -->
           <form class="login__form form">
-            <label for="phone">شماره همراه</label>
-            <input
-              class="form__input"
-              type="tel"
-              id="phone"
-              placeholder="مثلا ۰۹۱۲۳۴۵۶۷۸۹"
-              pattern="[0-9]{11}"
-              autofocus
-              required
-            />
-            <label for="pass">رمز عبور</label>
-            <div class="form__pass-wrapper">
+            <div class="form__form-control">
+              <label for="phone">شماره همراه</label>
               <input
                 class="form__input"
-                type="password"
-                id="pass"
-                placeholder="رمز عبور"
-                pattern="[A-Za-z0-9]{8,}"
+                type="tel"
+                id="phone"
+                placeholder="مثلا ۰۹۱۲۳۴۵۶۷۸۹"
+                pattern="[0-9]{11}"
+                autofocus
                 required
               />
-              <span class="form__eye"></span>
+            </div>
+            <div class="form__form-control">
+              <label for="pass">رمز عبور</label>
+              <div class="form__pass-wrapper">
+                <input
+                  class="form__input"
+                  type="password"
+                  id="pass"
+                  placeholder="رمز عبور"
+                  pattern="[A-Za-z0-9]{8,}"
+                  required
+                />
+                <span class="form__eye"></span>
+              </div>
             </div>
             <button class="form__submit submit" type="submit" disabled>
               <span class="submit__text">ورود</span>
@@ -49,8 +53,8 @@
           <!-- Block - 2 - End -->
 
           <div class="login__support">
-            <span>پشتیبانی:</span> &nbsp;
-            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+            <span>پشتیبانی:</span>
+            <span class="login__tel">۰۲۱-۱۲۳۴۵۶۷۸</span>
           </div>
         </div>
 
