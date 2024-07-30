@@ -184,12 +184,24 @@ html {
   padding: 0 0.5rem;
   margin: 0.5rem 0;
 }
+.form label {
+  color: #3c4351;
+}
 .form__input {
   background-color: #f9fafb;
   margin-bottom: 1.25rem;
+  text-align: right;
+  color: #3c4351;
+  font-size: 14px;
+  font-weight: 600;
 }
 .form__input:focus {
   outline: 1px dashed var(--primary-50);
+}
+.form__input::placeholder {
+  font-weight: 400;
+  color: #c3c5c9;
+  font-size: 14px;
 }
 .form__submit {
   color: white;
