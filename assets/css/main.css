@@ -108,6 +108,7 @@ body {
 input,
 button {
   font-family: "Peyda";
+  font-size: 16px;
 }
 
 html {
@@ -219,6 +220,7 @@ html {
 }
 
 .submit {
+  font-weight: 700;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -243,8 +245,8 @@ html {
   display: block;
 }
 .submit:disabled {
-  background-color: var(--primary-300);
   cursor: not-allowed;
+  background-color: var(--primary-500);
 }
 
 @keyframes rotate {

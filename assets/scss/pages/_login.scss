@@ -106,6 +106,7 @@
 }
 
 .submit {
+  font-weight: 700;
   @include flex();
 
   &__text {
@@ -131,8 +132,8 @@
   }
 
   &:disabled {
-    background-color: var(--primary-300);
     cursor: not-allowed;
+    background-color: var(--primary-500);
   }
 }
 
