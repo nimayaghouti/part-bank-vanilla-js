@@ -1,7 +1,7 @@
-@use "../utils/mixins" as *;
+@use '../utils/mixins' as *;
 
 .login-background {
-  background: url("../image/login-background.png") no-repeat center center;
+  background: url('../image/login-background.png') no-repeat center center;
   background-color: lightgray;
   background-size: cover;
 }
@@ -98,9 +98,49 @@
     height: 1.5rem;
     margin: 0 0.5rem;
     cursor: pointer;
-    background: url("../svg/icons/outline/eye-closed.svg"), $input-color;
+    background: url('../svg/icons/outline/eye-closed.svg'), $input-color;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+.submit {
+  @include flex();
+
+  &__text {
+    display: block;
+
+    &_loading {
+      display: none;
+    }
+  }
+
+  &__spinner {
+    width: 25px;
+    height: 25px;
+    border: 4px solid white;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: rotate 1s linear infinite;
+    display: none;
+
+    &_loading {
+      display: block;
+    }
+  }
+
+  &:disabled {
+    background-color: var(--primary-300);
+    cursor: not-allowed;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
