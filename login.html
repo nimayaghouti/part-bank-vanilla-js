@@ -7,6 +7,63 @@
     <title>پارت بانک - ثبت نام</title>
   </head>
   <body>
-    <script src="./assets/scripts/main.js"></script>
+    <main class="container login-background">
+      <!-- Block - 1 - Start -->
+      <div class="login">
+        <div class="login__form-wrapper">
+          <img
+            class="login__logo"
+            src="./assets/svg/logos/logo-with-text.svg"
+            alt="part bank logo"
+          />
+
+          <!-- Block - 2 - Start -->
+          <form class="login__form form">
+            <div class="form__form-control">
+              <label for="phone">شماره همراه</label>
+              <input
+                class="form__input"
+                type="tel"
+                id="phone"
+                placeholder="مثلا ۰۹۱۲۳۴۵۶۷۸۹"
+                pattern="[0-9]{11}"
+                autofocus
+                required
+              />
+            </div>
+            <div class="form__form-control">
+              <label for="pass">رمز عبور</label>
+              <div class="form__pass-wrapper">
+                <input
+                  class="form__input"
+                  type="password"
+                  id="pass"
+                  placeholder="رمز عبور"
+                  pattern="[A-Za-z0-9]{8,}"
+                  required
+                />
+                <span class="form__eye"></span>
+              </div>
+            </div>
+            <button class="form__submit submit" type="submit" disabled>
+              <span class="submit__text">ورود</span>
+              <span class="submit__spinner"></span>
+            </button>
+          </form>
+          <!-- Block - 2 - End -->
+
+          <div class="login__support">
+            <span>پشتیبانی:</span>
+            <span class="login__tel">۰۲۱-۱۲۳۴۵۶۷۸</span>
+          </div>
+        </div>
+
+        <div class="login__image-wrapper">
+          <img src="./assets/image/login-image.png" alt="login image" />
+        </div>
+      </div>
+      <!-- Block - 1 - End -->
+    </main>
+    <script src="./assets/scripts/login.js"></script>
   </body>
 </html>

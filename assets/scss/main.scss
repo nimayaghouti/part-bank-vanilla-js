@@ -4,27 +4,8 @@
 // base
 @use 'base/index' as *;
 
+// layout
+@use 'layout/index' as *;
+
 // pages
 @use 'pages/index' as *;
-
-body {
-  background-color: #f7f8fa;
-}
-
-:root {
-  @each $key, $value in $primary {
-    --#{$key}: #{$value};
-  }
-
-  @each $key, $value in $black {
-    --#{$key}: #{$value};
-  }
-
-  @each $key, $value in $fail {
-    --#{$key}: #{$value};
-  }
-
-  @each $key, $value in $success {
-    --#{$key}: #{$value};
-  }
-}
