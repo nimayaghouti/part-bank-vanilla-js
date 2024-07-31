@@ -1,14 +1,12 @@
 .dashboard {
   display: flex;
   padding: 2.5rem 16.25rem 10.5rem;
-
-  &__dialog {
-  }
 }
 
 //////////////////////////////////////////////
 
 .info {
+  position: relative; // for .dialog
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -17,9 +15,4 @@
     display: flex;
     gap: 1rem;
   }
-}
-
-//////////////////////////////////////////////
-
-.dialog {
 }
