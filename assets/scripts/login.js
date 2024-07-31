@@ -42,15 +42,11 @@ submitButton.addEventListener('click', (event) => {
   submitText.classList.add('submit__text_loading');
   submitSpinner.classList.add('submit__spinner_loading');
 
+  // save user to localStorage
   const tellInputValue = tellInput.value;
   const passInputValue = passInput.value;
-  localStorage.setItem(
-    'user',
-    JSON.stringify({
-      tell: tellInputValue,
-      password: passInputValue,
-    })
-  );
+  const user = new User(tellInputValue, passInputValue);
+  User.setUserToLocalStorage(user);
 
   setTimeout(() => {
     submitButton.disabled = false;
