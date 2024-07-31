@@ -356,6 +356,7 @@ html {
 }
 .dashboard {
   display: flex;
+  gap: 1rem;
   padding: 2.5rem 16.25rem 10.5rem;
 }
 
@@ -616,14 +617,14 @@ html {
   display: flex;
   justify-content: space-between;
 }
-.box__flex_coloumn {
+.box__flex_column {
   flex-direction: column;
 }
 .box__title {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.box__lable, .box__more {
+.box__label, .box__more {
   color: #8999b9;
   font-size: 0.875rem;
   font-weight: 400;
@@ -662,7 +663,7 @@ html {
 .score button {
   margin-top: 1rem;
 }
-.score .box__lable {
+.score .box__label {
   margin: 0.25rem 0;
 }
 
@@ -796,6 +797,7 @@ html {
   justify-content: center;
   background-color: rgba(247, 248, 250, 0.84);
   border: none;
+  padding-top: 3rem;
 }
 .dialog__note {
   font-weight: 600;

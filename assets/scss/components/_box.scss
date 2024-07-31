@@ -1,7 +1,7 @@
 @use '../utils/mixins' as *;
 @use '../utils/variables' as *;
 
-$lable-color: #8999b9;
+$label-color: #8999b9;
 
 .box {
   width: 21rem;
@@ -17,7 +17,7 @@ $lable-color: #8999b9;
     display: flex;
     justify-content: space-between;
 
-    &_coloumn {
+    &_column {
       flex-direction: column;
     }
   }
@@ -27,15 +27,15 @@ $lable-color: #8999b9;
     font-weight: 700;
   }
 
-  &__lable,
+  &__label,
   &__more {
-    color: $lable-color;
+    color: $label-color;
     font-size: 0.875rem;
     font-weight: 400;
   }
 
   &__more {
-    color: $lable-color;
+    color: $label-color;
     @include flex();
     cursor: pointer;
   }
@@ -68,7 +68,7 @@ $lable-color: #8999b9;
     margin-top: 1rem;
   }
 
-  .box__lable {
+  .box__label {
     margin: 0.25rem 0;
   }
 }
