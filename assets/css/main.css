@@ -102,8 +102,6 @@
 }
 
 img, svg, object {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
   object-position: center;
   display: block;
@@ -610,16 +608,92 @@ html {
   border: solid lightblue;
 }
 
-.box {
-  width: 21rem;
-  height: 16.25rem;
-  border: solid lightblue;
-}
-
 .transactions {
   width: 100%;
   height: 100%;
   border: solid lightblue;
+}
+
+.box {
+  width: 21rem;
+  height: 16.25rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.box__flex_coloumn {
+  flex-direction: column;
+}
+.box__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.box__lable, .box__more {
+  color: #8999b9;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.box__more {
+  color: #8999b9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.box img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.box button {
+  width: 100%;
+  height: 2.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-50);
+  color: #3c4351;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.box button:active {
+  background-color: var(--primary-200);
+}
+
+.score button {
+  margin-top: 1rem;
+}
+.score .box__lable {
+  margin: 0.25rem 0;
+}
+
+.installment__control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.installment__money, .installment__number {
+  font-weight: 700;
+  color: var(--primary-500);
+}
+.installment__money {
+  font-size: 2.5rem;
+}
+.installment__number {
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */
