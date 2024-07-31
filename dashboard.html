@@ -10,20 +10,20 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img src="./assets/svg/logos/logo-simple.svg" alt="angle down"/>
+        <img src="./assets/svg/logos/logo-simple.svg" alt="angle down" />
         پارت بانک
       </div>
 
       <div class="header__user-info user-info">
         <div class="user-info__notifs">
-          <img src="./assets/svg/icons/other/notification.svg" alt="avatar"/>
+          <img src="./assets/svg/icons/other/notification.svg" alt="avatar" />
         </div>
         <div class="user-info__avatar">
-          <img src="./assets/svg/flats/avatar.svg" alt="avatar"/>
+          <img src="./assets/svg/flats/avatar.svg" alt="avatar" />
         </div>
         <div class="user-info__tel">۰۹۲۲۶۵۹۸۷۲</div>
         <div class="user-info__logout">
-          <img src="./assets/svg/icons/other/angle-down.svg" alt="angle down"/>
+          <img src="./assets/svg/icons/other/angle-down.svg" alt="angle down" />
         </div>
       </div>
     </header>
@@ -34,9 +34,54 @@
       <section class="dashboard__info info">
         <div class="info__wrapper">
           <div class="info__card card">card</div>
-          <div class="info__box box score">box 1</div>
-          <div class="info__box box installment">box 2</div>
+
+          <div class="info__box box installment">
+            <div class="box__flex">
+              <div class="box__title">امتیاز حساب</div>
+              <div class="box__more">
+                <img src="./assets/svg/icons/bold/info-circle.svg" />
+              </div>
+            </div>
+            <div class="box__flex_coloumn">
+              <div class="installment__control">
+                <span class="installment__money">۰</span>
+                <span class="box__lable">ریال</span>
+              </div>
+              <div class="installment__control">
+                <span class="installment__number">۰</span>
+                <span class="box__lable">ماهه</span>
+              </div>
+            </div>
+            <button>محاسبه امتیاز</button>
+          </div>
+
+          <div class="info__box box score">
+            <div class="box__flex">
+              <div class="box__title">قسط پیش رو</div>
+              <div class="box__more">
+                جزئیات
+                <img src="./assets/svg/icons/other/angle-left.svg" />
+              </div>
+            </div>
+            <div class="box__flex_coloumn">
+              <div>
+                <div class="box__flex">
+                  <span class="box__lable">مبلغ قسط:</span>
+                  <span class="score__number">۰</span>
+                </div>
+                <div class="box__flex">
+                  <span class="box__lable">تاریخ سررسید:</span>
+                  <span class="score__number">-</span>
+                </div>
+              </div>
+              <button>
+                پرداخت
+                <img src="./assets/svg/icons/linear/arrow-left.svg" />
+              </button>
+            </div>
+          </div>
         </div>
+        
         <div class="info__transactions transactions">table</div>
       </section>
 
