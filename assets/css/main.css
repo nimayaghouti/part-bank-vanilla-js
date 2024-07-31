@@ -42,84 +42,56 @@
 }
 
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Thin.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Thin.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Thin.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Thin.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Thin.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Thin.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Thin.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Thin.eot") format("embedded-opentype");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/peydaWeb-extralight.woff') format('woff'),
-    url('../fonts/peyda/ttf/peydaWeb-extralight.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/peydaWeb-extralight.woff2') format('woff2'),
-    url('../fonts/peyda/eot/peydaWeb-extralight.eot')
-      format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/peydaWeb-extralight.woff") format("woff"), url("../fonts/peyda/ttf/peydaWeb-extralight.ttf") format("truetype"), url("../fonts/peyda/woff2/peydaWeb-extralight.woff2") format("woff2"), url("../fonts/peyda/eot/peydaWeb-extralight.eot") format("embedded-opentype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/peydaWeb-light.woff') format('woff'),
-    url('../fonts/peyda/ttf/peydaWeb-light.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/peydaWeb-light.woff2') format('woff2'),
-    url('../fonts/peyda/eot/peydaWeb-light.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/peydaWeb-light.woff") format("woff"), url("../fonts/peyda/ttf/peydaWeb-light.ttf") format("truetype"), url("../fonts/peyda/woff2/peydaWeb-light.woff2") format("woff2"), url("../fonts/peyda/eot/peydaWeb-light.eot") format("embedded-opentype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Regular.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Regular.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Regular.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Regular.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Regular.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Regular.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Regular.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Regular.eot") format("embedded-opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Medium.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Medium.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Medium.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Medium.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Medium.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Medium.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Medium.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Medium.eot") format("embedded-opentype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-SemiBold.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-SemiBold.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-SemiBold.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-SemiBold.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-SemiBold.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-SemiBold.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-SemiBold.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-SemiBold.eot") format("embedded-opentype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Bold.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Bold.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Bold.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Bold.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Bold.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Bold.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Bold.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Bold.eot") format("embedded-opentype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-ExtraBold.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-ExtraBold.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-ExtraBold.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-ExtraBold.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-ExtraBold.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-ExtraBold.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-ExtraBold.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-ExtraBold.eot") format("embedded-opentype");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Black.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Black.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Black.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Black.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Black.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Black.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Black.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Black.eot") format("embedded-opentype");
   font-weight: 900;
   font-style: normal;
 }
@@ -129,26 +101,25 @@
   padding: 0;
 }
 
-img,
-svg,
-object {
+img, svg, object {
   object-fit: contain;
   object-position: center;
   display: block;
 }
 
 body {
+  color: #3C4351;
   background-color: #f7f8fa;
 }
 
 input,
 button {
-  font-family: 'Peyda';
+  font-family: "Peyda";
   font-size: 16px;
 }
 
 html {
-  font-family: 'Peyda';
+  font-family: "Peyda";
   font-size: 16px;
   direction: rtl;
 }
@@ -162,8 +133,70 @@ html {
   justify-content: center;
 }
 
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+.main_watch-header {
+  height: calc(100vh - 4.25rem);
+}
+.main_flex-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  height: 4.25rem;
+  padding: 0.88rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 2px 8px 0px rgba(21, 0, 43, 0.05);
+}
+.header__logo {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-wrap: nowrap;
+  font-weight: 400;
+}
+.header__logo img {
+  height: 1.9375rem;
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.user-info__logout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.user-info__logout img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.user-info__notifs {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.user-info__notifs:hover {
+  opacity: 1;
+}
+
 .login-background {
-  background: url('../image/login-background.png') no-repeat center center;
+  background: url("../image/login-background.png") no-repeat center center;
   background-color: lightgray;
   background-size: cover;
 }
@@ -230,8 +263,7 @@ html {
   justify-content: center;
   gap: 0.25rem;
 }
-.form__input,
-.form__submit {
+.form__input, .form__submit {
   border-radius: 0.4rem;
   border: none;
   width: 100%;
@@ -278,7 +310,7 @@ html {
   height: 1.5rem;
   margin: 0 0.5rem;
   cursor: pointer;
-  background: url('../svg/icons/outline/eye-closed.svg'), #f9fafb;
+  background: url("../svg/icons/outline/eye-closed.svg"), #f9fafb;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -453,14 +485,13 @@ html {
   pointer-events: none;
 }
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../svg/layouts/noise.svg), url(../svg/layouts/pattern.svg),
-    no-repeat center;
+  background: url(../svg/layouts/noise.svg), url(../svg/layouts/pattern.svg), no-repeat center;
   background-size: contain;
   z-index: 0;
 }
@@ -593,8 +624,7 @@ html {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.box__label,
-.box__more {
+.box__label, .box__more {
   color: #8999b9;
   font-size: 0.875rem;
   font-weight: 400;
@@ -644,8 +674,7 @@ html {
   justify-content: center;
   gap: 0.25rem;
 }
-.installment__money,
-.installment__number {
+.installment__money, .installment__number {
   font-weight: 700;
   color: var(--primary-500);
 }
@@ -719,7 +748,7 @@ html {
   border-radius: 0.5rem;
   outline: none;
   padding-right: 0.5rem;
-  font-family: 'Peyda';
+  font-family: "Peyda";
   border: 1px solid #e2edff;
   background: #fff;
   appearance: none;
