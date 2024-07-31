@@ -1,12 +1,6 @@
 @use '../utils/mixins' as *;
 @use '../components/sidebar' as *;
 
-.header {
-  border: solid lightgreen;
-}
-
-//////////////////////////////////////////////
-
 .dashboard {
   display: flex;
   padding: 2.5rem 16.25rem 10.5rem;

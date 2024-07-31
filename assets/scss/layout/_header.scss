@@ -1,0 +1,51 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.header {
+  width: 100%;
+  height: $header-height;
+  padding: 0.88rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 2px 8px 0px rgba(21, 0, 43, 0.05);
+
+  &__logo {
+    flex-shrink: 0;
+    @include flex();
+    gap: 0.75rem;
+    text-wrap: nowrap;
+    font-weight: 400;
+
+    img {
+      height: 1.9375rem;
+    }
+  }
+
+  &__user-info {
+  }
+}
+
+.user-info {
+  @include flex();
+  gap: 0.5rem;
+
+  &__logout {
+    @include flex();
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &__notifs {
+    opacity: 0.75;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
