@@ -1,13 +1,6 @@
-@use '../utils/mixins' as *;
-@use '../components/sidebar' as *;
-@use '../components/card' as *;
-
 .dashboard {
   display: flex;
   padding: 2.5rem 16.25rem 10.5rem;
-
-  &__info {
-  }
 
   &__dialog {
   }
@@ -15,41 +8,15 @@
 
 //////////////////////////////////////////////
 
-//////////////////////////////////////////////
-
 .info {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border: solid lightcoral;
 
   &__wrapper {
     display: flex;
     gap: 1rem;
-    border: solid greenyellow;
   }
-
-  &__card {
-  }
-
-  &__box {
-  }
-
-  &__transactions {
-  }
-}
-
-.card {
-  width: 28.5rem;
-  height: 16.25rem;
-  flex-shrink: 0;
-  border: solid lightblue;
-}
-
-.transactions {
-  width: 100%;
-  height: 100%;
-  border: solid lightblue;
 }
 
 //////////////////////////////////////////////

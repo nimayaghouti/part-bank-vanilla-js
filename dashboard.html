@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img src="./assets/svg/logos/logo-simple.svg" alt="angle down"  />
+        <img src="./assets/svg/logos/logo-simple.svg" alt="angle down" />
         پارت بانک
       </div>
 
@@ -164,8 +164,37 @@
             </div>
           </div>
         </div>
-        
-        <div class="info__transactions transactions">table</div>
+
+        <div class="info__transactions transactions">
+          <div class="transactions__header">
+            <h3>
+              لیست تراکنش‌ها
+              <div class="transactions__currency">(ریال)</div>
+            </h3>
+            <div class="transactions__tools">
+              <div class="transactions__sort">
+                <label for="sort-transactions">
+                  <img
+                    src="./assets/svg/icons/other/fluent-arrow.svg"
+                    alt="sort"
+                  />
+                  مرتب سازی:
+                </label>
+                <select name="sort-transactions" id="sort-transactions">
+                  <option value="همه" selected>همه</option>
+                </select>
+                <img
+                  src="./assets/svg/icons/other/angle-down.svg"
+                  alt="arrow-down"
+                />
+              </div>
+              <div class="transactions__search">
+                <input type="text" placeholder="جستجو" />
+                <img src="./assets/svg/icons/other/search.svg" alt="search" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <dialog class="dashboard__dialog dialog">dialog</dialog>
