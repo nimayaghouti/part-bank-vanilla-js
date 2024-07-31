@@ -1,11 +1,10 @@
 @use '../utils/mixins' as *;
+@use '../components/sidebar' as *;
+@use '../components/card' as *;
 
 .dashboard {
   display: flex;
   padding: 2.5rem 16.25rem 10.5rem;
-
-  &__sidebar {
-  }
 
   &__info {
   }
@@ -15,11 +14,6 @@
 }
 
 //////////////////////////////////////////////
-
-.sidebar {
-  width: 13.75rem;
-  border: solid yellow;
-}
 
 //////////////////////////////////////////////
 
