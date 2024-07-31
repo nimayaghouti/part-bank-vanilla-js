@@ -42,84 +42,56 @@
 }
 
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Thin.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Thin.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Thin.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Thin.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Thin.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Thin.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Thin.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Thin.eot") format("embedded-opentype");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/peydaWeb-extralight.woff') format('woff'),
-    url('../fonts/peyda/ttf/peydaWeb-extralight.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/peydaWeb-extralight.woff2') format('woff2'),
-    url('../fonts/peyda/eot/peydaWeb-extralight.eot')
-      format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/peydaWeb-extralight.woff") format("woff"), url("../fonts/peyda/ttf/peydaWeb-extralight.ttf") format("truetype"), url("../fonts/peyda/woff2/peydaWeb-extralight.woff2") format("woff2"), url("../fonts/peyda/eot/peydaWeb-extralight.eot") format("embedded-opentype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/peydaWeb-light.woff') format('woff'),
-    url('../fonts/peyda/ttf/peydaWeb-light.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/peydaWeb-light.woff2') format('woff2'),
-    url('../fonts/peyda/eot/peydaWeb-light.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/peydaWeb-light.woff") format("woff"), url("../fonts/peyda/ttf/peydaWeb-light.ttf") format("truetype"), url("../fonts/peyda/woff2/peydaWeb-light.woff2") format("woff2"), url("../fonts/peyda/eot/peydaWeb-light.eot") format("embedded-opentype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Regular.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Regular.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Regular.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Regular.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Regular.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Regular.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Regular.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Regular.eot") format("embedded-opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Medium.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Medium.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Medium.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Medium.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Medium.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Medium.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Medium.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Medium.eot") format("embedded-opentype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-SemiBold.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-SemiBold.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-SemiBold.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-SemiBold.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-SemiBold.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-SemiBold.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-SemiBold.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-SemiBold.eot") format("embedded-opentype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Bold.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Bold.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Bold.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Bold.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Bold.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Bold.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Bold.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Bold.eot") format("embedded-opentype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-ExtraBold.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-ExtraBold.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-ExtraBold.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-ExtraBold.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-ExtraBold.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-ExtraBold.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-ExtraBold.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-ExtraBold.eot") format("embedded-opentype");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Peyda';
-  src: url('../fonts/peyda/woff/PeydaWeb-Black.woff') format('woff'),
-    url('../fonts/peyda/ttf/PeydaWeb-Black.ttf') format('truetype'),
-    url('../fonts/peyda/woff2/PeydaWeb-Black.woff2') format('woff2'),
-    url('../fonts/peyda/eot/PeydaWeb-Black.eot') format('embedded-opentype');
+  font-family: "Peyda";
+  src: url("../fonts/peyda/woff/PeydaWeb-Black.woff") format("woff"), url("../fonts/peyda/ttf/PeydaWeb-Black.ttf") format("truetype"), url("../fonts/peyda/woff2/PeydaWeb-Black.woff2") format("woff2"), url("../fonts/peyda/eot/PeydaWeb-Black.eot") format("embedded-opentype");
   font-weight: 900;
   font-style: normal;
 }
@@ -129,9 +101,7 @@
   padding: 0;
 }
 
-img,
-svg,
-object {
+img, svg, object {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -140,18 +110,18 @@ object {
 }
 
 body {
-  color: #3c4351;
+  color: #3C4351;
   background-color: #f7f8fa;
 }
 
 input,
 button {
-  font-family: 'Peyda';
+  font-family: "Peyda";
   font-size: 16px;
 }
 
 html {
-  font-family: 'Peyda';
+  font-family: "Peyda";
   font-size: 16px;
   direction: rtl;
 }
@@ -228,7 +198,7 @@ html {
 }
 
 .login-background {
-  background: url('../image/login-background.png') no-repeat center center;
+  background: url("../image/login-background.png") no-repeat center center;
   background-color: lightgray;
   background-size: cover;
 }
@@ -295,8 +265,7 @@ html {
   justify-content: center;
   gap: 0.25rem;
 }
-.form__input,
-.form__submit {
+.form__input, .form__submit {
   border-radius: 0.4rem;
   border: none;
   width: 100%;
@@ -343,7 +312,7 @@ html {
   height: 1.5rem;
   margin: 0 0.5rem;
   cursor: pointer;
-  background: url('../svg/icons/outline/eye-closed.svg'), #f9fafb;
+  background: url("../svg/icons/outline/eye-closed.svg"), #f9fafb;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -486,10 +455,142 @@ html {
   width: 20px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  width: 28.5rem;
+  height: 16.25rem;
+  background: linear-gradient(112deg, #4152a0 0%, #d0c9c1 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../svg/layouts/noise.svg), url(../svg/layouts/pattern.svg), no-repeat center;
+  background-size: contain;
+  z-index: 0;
+}
+.card__header {
+  display: flex;
+  margin: 2.25rem;
+  margin-bottom: 0;
+  justify-content: space-between;
+  z-index: 1;
+}
+.card__balance-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 0;
+}
+.card__balance-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card__balance-amount {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.card__number-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3.25rem 2rem;
+  gap: 1rem;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.actions-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  position: relative;
+}
+.actions-btn__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 0.75rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 67, 101, 0.05);
+  color: #c3c5c9;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: absolute;
+  padding: 0.75rem;
+  gap: 0.75rem;
+  background: #fff;
+  width: 11.8rem;
+  line-height: 1.25rem;
+  right: 0.125rem;
+  top: 3.4rem;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility, opacity, top, 0.5s;
+}
+.actions-btn__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  right: -0.68rem;
+}
+.actions-btn__separator {
+  width: 100%;
+  height: 0.065rem;
+  background-color: #e2edff;
+}
+.actions-btn:hover {
+  cursor: pointer;
+}
+.actions-btn:hover .actions-menu {
+  top: 2.2rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+.actions-menu__item {
+  display: flex;
+  gap: 0.5rem;
+}
+.actions-menu__item:last-child {
+  color: #eb482b;
+}
+.actions-menu__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-size: cover;
+}
+.actions-menu__icon_change {
+  background-image: url(../svg/icons/outline/convert-card.svg);
+}
+.actions-menu__icon_delete {
+  background-image: url(../svg/icons/other/exit.svg);
+}
+
 .dashboard {
   display: flex;
   padding: 2.5rem 16.25rem 10.5rem;
-  border: solid green;
 }
 .info {
   display: flex;
