@@ -18,3 +18,9 @@
   font-size: $size;
   font-weight: $weight;
 }
+
+@mixin label() {
+  color: #8999b9;
+  font-size: 0.875rem;
+  font-weight: 400;
+}

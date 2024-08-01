@@ -6,12 +6,15 @@
   justify-content: center;
   gap: 1rem;
   padding-top: 2.5rem;
+
+  &__info {
+    position: relative; // for info__dialog
+  }
 }
 
 //////////////////////////////////////////////
 
 .info {
-  position: relative; // for .dialog
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -19,5 +22,11 @@
   &__wrapper {
     display: flex;
     gap: 1rem;
+  }
+
+  &__dialog {
+    position: absolute; // relative to .info
+    top: 0;
+    left: 0;
   }
 }
