@@ -22,7 +22,7 @@ eyeButton.addEventListener('click', () => {
 });
 
 // check input validity ///////////////////////////////////////
-function setSubmitPermision() {
+function setSubmitPermission() {
   const isValid = passInput.checkValidity() && tellInput.checkValidity();
   if (isValid) {
     submitButton.disabled = false;
@@ -31,8 +31,8 @@ function setSubmitPermision() {
   }
 }
 
-passInput.addEventListener('keyup', () => setSubmitPermision());
-tellInput.addEventListener('keyup', () => setSubmitPermision());
+passInput.addEventListener('keyup', () => setSubmitPermission());
+tellInput.addEventListener('keyup', () => setSubmitPermission());
 
 // loader on submit /////////////////////////////////////////////
 submitButton.addEventListener('click', (event) => {

@@ -3,14 +3,8 @@
 
 .container {
   width: 100vw;
-  min-height: 100vh;
-  @include flex();
-}
-
-.main {
-  width: 100vw;
   height: 100vh;
-
+  
   &_watch-header {
     height: calc(100vh - $header-height);
   }
