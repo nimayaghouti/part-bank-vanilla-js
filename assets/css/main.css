@@ -354,9 +354,11 @@ html {
   gap: 1rem;
   padding-top: 2.5rem;
 }
+.dashboard__info {
+  position: relative;
+}
 
 .info {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -364,6 +366,11 @@ html {
 .info__wrapper {
   display: flex;
   gap: 1rem;
+}
+.info__dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sidebar {
@@ -608,35 +615,30 @@ html {
   flex-direction: column;
   justify-content: space-between;
 }
-.box__flex {
+.box__top-part {
   display: flex;
   justify-content: space-between;
-}
-.box__flex_column {
-  flex-direction: column;
 }
 .box__title {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.box__label, .box__more {
-  color: #8999b9;
-  font-size: 0.875rem;
-  font-weight: 400;
-}
 .box__more {
-  color: #8999b9;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
+.box__installment {
+  margin-top: auto;
+  margin-bottom: 1.25rem;
+}
 .box img {
   width: 1.5rem;
   height: 1.5rem;
 }
-.box button {
+.box__button {
   width: 100%;
   height: 2.75rem;
   display: flex;
@@ -651,32 +653,41 @@ html {
   border: none;
   cursor: pointer;
 }
-.box button:active {
+.box__button:active {
   background-color: var(--primary-200);
 }
 
-.score button {
-  margin-top: 1rem;
-}
-.score .box__label {
+.installment__label {
+  color: #8999b9;
+  font-size: 0.875rem;
+  font-weight: 400;
   margin: 0.25rem 0;
 }
+.installment__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
-.installment__control {
+.score__lable {
+  color: #8999b9;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.score__control {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
 }
-.installment__money, .installment__number {
+.score__money, .score__number {
   font-weight: 700;
   color: var(--primary-500);
 }
-.installment__money {
+.score__money {
   font-size: 2.5rem;
 }
-.installment__number {
+.score__number {
   font-size: 1.25rem;
 }
 
@@ -781,9 +792,6 @@ html {
 }
 
 .dialog {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   display: flex;

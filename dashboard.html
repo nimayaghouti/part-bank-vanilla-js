@@ -139,50 +139,52 @@
               <div class="card__number-group"></div>
             </div>
 
-            <div class="info__box box installment">
-              <div class="box__flex">
+            <div class="info__box box">
+              <div class="box__top-part">
                 <div class="box__title">امتیاز حساب</div>
                 <div class="box__more">
                   <img src="./assets/svg/icons/bold/info-circle.svg" />
                 </div>
               </div>
-              <div class="box__flex_column">
-                <div class="installment__control">
-                  <span class="installment__money">۰</span>
-                  <span class="box__label">ریال</span>
+
+              <div class="box__score score">
+                <div class="score__control">
+                  <span class="score__money">۰</span>
+                  <span class="score__label">ریال</span>
                 </div>
-                <div class="installment__control">
-                  <span class="installment__number">۰</span>
-                  <span class="box__label">ماهه</span>
+                <div class="score__control">
+                  <span class="score__number">۰</span>
+                  <span class="score__label">ماهه</span>
                 </div>
               </div>
-              <button>محاسبه امتیاز</button>
+
+              <button class="box__button">محاسبه امتیاز</button>
             </div>
 
-            <div class="info__box box score">
-              <div class="box__flex">
+            <div class="info__box box">
+              <div class="box__top-part">
                 <div class="box__title">قسط پیش رو</div>
                 <div class="box__more">
                   جزئیات
                   <img src="./assets/svg/icons/other/angle-left.svg" />
                 </div>
               </div>
-              <div class="box__flex_column">
-                <div>
-                  <div class="box__flex">
-                    <span class="box__label">مبلغ قسط:</span>
-                    <span class="score__number">۰</span>
-                  </div>
-                  <div class="box__flex">
-                    <span class="box__label">تاریخ سررسید:</span>
-                    <span class="score__number">-</span>
-                  </div>
+
+              <div class="box__installment installment">
+                <div class="installment__wrapper">
+                  <span class="installment__label">مبلغ قسط:</span>
+                  <span class="installment__number">۰</span>
                 </div>
-                <button>
-                  پرداخت
-                  <img src="./assets/svg/icons/linear/arrow-left.svg" />
-                </button>
+                <div class="installment__wrapper">
+                  <span class="installment__label">تاریخ سررسید:</span>
+                  <span class="installment__number">-</span>
+                </div>
               </div>
+
+              <button class="box__button">
+                پرداخت
+                <img src="./assets/svg/icons/linear/arrow-left.svg" />
+              </button>
             </div>
           </div>
 
@@ -217,7 +219,7 @@
             </div>
           </div>
 
-          <div class="dashboard__dialog dialog">
+          <div class="info__dialog dialog">
             <img src="./assets/svg/flats/empty-state-illustration.svg" />
             <span class="dialog__note">
               برای دسترسی به داشبورد، لطفا ابتدا افتتاح حساب کنید
