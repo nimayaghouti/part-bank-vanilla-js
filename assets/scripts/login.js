@@ -13,11 +13,11 @@ eyeButton.addEventListener('click', () => {
   if (passInput.type === 'password') {
     passInput.type = 'text';
     eyeButton.style.backgroundImage =
-      "url('/assets/svg/icons/outline/eye.svg')";
+      "url('./assets/svg/icons/outline/eye.svg')";
   } else {
     passInput.type = 'password';
     eyeButton.style.backgroundImage =
-      "url('/assets/svg/icons/outline/eye-closed.svg')";
+      "url('./assets/svg/icons/outline/eye-closed.svg')";
   }
 });
 
