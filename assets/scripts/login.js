@@ -1,7 +1,7 @@
 // getting elements //////////////////////////////////////////////
 const tellInput = document.querySelector('#phone');
 const passInput = document.querySelector('#pass');
-const eyeButton = document.querySelector('.form__eye');
+const eyeButton = document.querySelector('.form__toggle-password');
 const submitButton = document.querySelector('.form__submit');
 
 const submitText = document.querySelector('.submit__text');
