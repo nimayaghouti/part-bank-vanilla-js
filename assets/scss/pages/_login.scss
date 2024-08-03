@@ -85,7 +85,10 @@
     font-weight: 600;
 
     &_password {
-      padding-left: 2.25rem;
+      width: 19.4rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-left: 0.25rem;
     }
 
     &:focus {
@@ -112,14 +115,16 @@
 
   &__toggle-password {
     position: absolute;
-    left: 0.5rem;
+    left: 0rem;
     bottom: 0;
-    width: 1.5rem;
     height: 3rem;
     cursor: pointer;
-    background: url(../svg/icons/outline/eye-closed.svg), #f9fafb;
-    background-position: center;
+    background: url(../svg/icons/outline/eye-closed.svg), $bg-color;
+    background-position-y: center;
+    background-position-x: right;
     background-repeat: no-repeat;
+    padding-left: 2rem;
+    border-radius: 0.4rem 0 0 0.4rem;
   }
 }
 
