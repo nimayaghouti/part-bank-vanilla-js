@@ -128,14 +128,17 @@ html {
   width: 100vw;
   height: 100vh;
 }
-.container_watch-header {
-  height: calc(100vh - 4.25rem);
-}
-.container_flex-center {
+.container_login {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background: url("../image/login-background.png") no-repeat center center;
+  background-color: lightgray;
+  background-size: cover;
+}
+.container_watch-header {
+  height: calc(100vh - 4.25rem);
 }
 
 .header {
@@ -184,12 +187,6 @@ html {
 }
 .user-info__notifs:hover {
   opacity: 1;
-}
-
-.login-background {
-  background: url("../image/login-background.png") no-repeat center center;
-  background-color: lightgray;
-  background-size: cover;
 }
 
 .login {
@@ -247,12 +244,13 @@ html {
   width: 60%;
   gap: 2rem;
 }
-.form__form-control {
+.form__control {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   gap: 0.25rem;
+  position: relative;
 }
 .form__input, .form__submit {
   border-radius: 0.4rem;
@@ -261,7 +259,7 @@ html {
   height: 3rem;
   padding: 0 0.5rem;
 }
-.form label {
+.form__label {
   color: #3c4351;
 }
 .form__input {
@@ -270,6 +268,9 @@ html {
   color: #3c4351;
   font-size: 14px;
   font-weight: 600;
+}
+.form__input_password {
+  padding-left: 2.25rem;
 }
 .form__input:focus {
   outline: 1px dashed var(--primary-50);
@@ -288,21 +289,14 @@ html {
 .form__submit:active {
   background-color: var(--primary-900);
 }
-.form__pass-wrapper {
-  margin-bottom: 1rem;
-  position: relative;
-}
-.form__eye {
+.form__toggle-password {
   position: absolute;
-  top: 50%;
-  left: 0.25rem;
-  transform: translate(0, -50%);
+  left: 0.5rem;
+  bottom: 0;
   width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 0.5rem;
+  height: 3rem;
   cursor: pointer;
-  background: url("../svg/icons/outline/eye-closed.svg"), #f9fafb;
-  background-size: cover;
+  background: url(../svg/icons/outline/eye-closed.svg), #f9fafb;
   background-position: center;
   background-repeat: no-repeat;
 }
