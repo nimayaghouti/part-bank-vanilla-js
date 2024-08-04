@@ -12,7 +12,7 @@
     @include flex($justify: space-between);
   }
 
-  & h3 {
+  &__title {
     @include flex();
     text-align: right;
     font-size: 1.25rem;
@@ -37,33 +37,33 @@
     @include flex();
     gap: 0.5rem;
     position: relative;
+  }
 
-    label {
-      color: #8999b9;
-      @include flex();
+  &__sort-label {
+    color: #8999b9;
+    @include flex();
+  }
 
-      img {
-        position: absolute;
-        right: -1.1rem;
-      }
-    }
+  &__sort-icon {
+    position: absolute;
+    right: -1.1rem;
+  }
 
-    select {
-      width: 11.43rem;
-      height: 2.125rem;
-      @include border-radius($radius: 0.5rem);
-      outline: none;
-      padding-right: 0.5rem;
-      font-family: 'Peyda';
-      border: 1px solid #e2edff;
-      background: #fff;
-      appearance: none;
-    }
+  &__sort-select {
+    width: 11.43rem;
+    height: 2.125rem;
+    @include border-radius($radius: 0.5rem);
+    outline: none;
+    padding-right: 0.5rem;
+    font-family: 'Peyda';
+    border: 1px solid #e2edff;
+    background: #fff;
+    appearance: none;
+  }
 
-    select + img {
-      position: absolute;
-      left: 0.25rem;
-    }
+  &__sort-arrow {
+    position: absolute;
+    left: 0.25rem;
   }
 
   &__search {
@@ -71,26 +71,26 @@
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
+  }
 
-    input {
-      width: 16.0625rem;
-      height: 2.125rem;
-      @include border-radius($radius: 0.5rem);
-      outline: none;
-      padding-right: 0.5rem;
-      border: 1px solid #e2edff;
-      background: #fff;
-    }
+  &__search-input {
+    width: 16.0625rem;
+    height: 2.125rem;
+    @include border-radius($radius: 0.5rem);
+    outline: none;
+    padding-right: 0.5rem;
+    border: 1px solid #e2edff;
+    background: #fff;
 
-    ::placeholder {
+    &::placeholder {
       font-size: 0.875rem;
     }
+  }
 
-    img {
-      position: absolute;
-      left: 0rem;
-      background-color: #eceef6;
-      padding: 0.4rem 0.4rem 0.5rem 0.5rem;
-    }
+  &__search-icon {
+    position: absolute;
+    left: 0rem;
+    background-color: #eceef6;
+    padding: 0.4rem 0.4rem 0.5rem 0.5rem;
   }
 }
