@@ -1,58 +1,55 @@
-// getting elements //////////////////////////////////////////////
-const tellInput = document.querySelector('#phone');
-const passInput = document.querySelector('#pass');
-const eyeButton = document.querySelector('.form__toggle-password');
+const phoneInput = document.querySelector('#phone');
+const passwordInput = document.querySelector('#pass');
+const togglePasswordButton = document.querySelector('.form__toggle-password');
 const submitButton = document.querySelector('.form__submit');
-
 const submitText = document.querySelector('.submit__text');
 const submitSpinner = document.querySelector('.submit__spinner');
 
-// show / hide password //////////////////////////////////////////
-eyeButton.addEventListener('click', () => {
-  passInput.focus();
-  if (passInput.type === 'password') {
-    passInput.type = 'text';
-    eyeButton.style.backgroundImage =
-      "url('./assets/svg/icons/outline/eye.svg')";
-  } else {
-    passInput.type = 'password';
-    eyeButton.style.backgroundImage =
-      "url('./assets/svg/icons/outline/eye-closed.svg')";
-  }
-});
 
-// check input validity ///////////////////////////////////////
-function setSubmitPermission() {
-  const isValid = passInput.checkValidity() && tellInput.checkValidity();
-  if (isValid) {
-    submitButton.disabled = false;
-  } else {
+const onToggle = () => {
+    passwordInput.focus();
+    const iconOnShow = "url('./assets/svg/icons/outline/eye.svg')";
+    const iconOnHide = "url('./assets/svg/icons/outline/eye-closed.svg')";
+
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        togglePasswordButton.style.backgroundImage = iconOnShow;
+    } else {
+        passwordInput.type = 'password';
+        togglePasswordButton.style.backgroundImage = iconOnHide;
+    }
+};
+togglePasswordButton.addEventListener('click', onToggle);
+
+
+const setSubmitPermission = () => {
+    const isInputValid = passwordInput.checkValidity() && phoneInput.checkValidity();
+    isInputValid ? submitButton.disabled = false : submitButton.disabled = true;
+};
+passwordInput.addEventListener('keyup', setSubmitPermission);
+phoneInput.addEventListener('keyup', setSubmitPermission);
+
+
+const onSubmit = (event) => {
+    event.preventDefault();
+
     submitButton.disabled = true;
-  }
-}
+    submitText.classList.add('submit__text_loading');
+    submitSpinner.classList.add('submit__spinner_loading');
 
-passInput.addEventListener('keyup', () => setSubmitPermission());
-tellInput.addEventListener('keyup', () => setSubmitPermission());
+    // save user to localStorage (needs to change in another branch)
+    const phoneInputValue = phoneInput.value;
+    const passwordInputValue = passwordInput.value;
+    const user = new User(phoneInputValue, passwordInputValue);
+    User.setUserToLocalStorage(user);
+    // 
 
-// loader on submit /////////////////////////////////////////////
-submitButton.addEventListener('click', (event) => {
-  event.preventDefault();
+    setTimeout(() => {
+        submitButton.disabled = false;
+        submitText.classList.remove('submit__text_loading');
+        submitSpinner.classList.remove('submit__spinner_loading');
 
-  submitButton.disabled = true;
-  submitText.classList.add('submit__text_loading');
-  submitSpinner.classList.add('submit__spinner_loading');
-
-  // save user to localStorage
-  const tellInputValue = tellInput.value;
-  const passInputValue = passInput.value;
-  const user = new User(tellInputValue, passInputValue);
-  User.setUserToLocalStorage(user);
-
-  setTimeout(() => {
-    submitButton.disabled = false;
-    submitText.classList.remove('submit__text_loading');
-    submitSpinner.classList.remove('submit__spinner_loading');
-
-    window.location.href = 'dashboard.html';
-  }, 3000);
-});
+        window.location.href = 'dashboard.html';
+    }, 3000);
+};
+submitButton.addEventListener('click', onSubmit);
