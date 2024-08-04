@@ -1,15 +1,15 @@
 class User {
-    tel;
+    phone;
     password;
 
-    constructor(tel, password) {
-        this.tel = tel;
+    constructor(phone, password) {
+        this.phone = phone;
         this.password = password;
     }
 
     static setUserToLocalStorage(user) {
         localStorage.setItem("user", JSON.stringify({
-            tel: user.tel,
+            phone: user.phone,
             password: user.password,
         }));
     }
