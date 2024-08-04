@@ -39,7 +39,7 @@
           </div>
           <div class="sidebar__separator"></div>
           <ul class="sidebar__menu menu">
-            <li class="menu__item">
+            <li class="menu__item menu__item_active">
               <div class="menu__item-icon">
                 <img
                   src="./assets/svg/icons/other/element-4.svg"
@@ -93,7 +93,7 @@
               </div>
               خدمات
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__item_exit">
               <div class="menu__item-icon">
                 <img
                   src="./assets/svg/icons/other/exit.svg"
@@ -190,30 +190,47 @@
 
           <div class="info__transactions transactions">
             <div class="transactions__header">
-              <h3>
+              <h3 class="transactions__title">
                 لیست تراکنش‌ها
                 <div class="transactions__currency">(ریال)</div>
               </h3>
               <div class="transactions__tools">
                 <div class="transactions__sort">
-                  <label for="sort-transactions">
+                  <label
+                    for="sort-transactions"
+                    class="transactions__sort-label"
+                  >
                     <img
                       src="./assets/svg/icons/other/fluent-arrow.svg"
                       alt="sort"
+                      class="transactions__sort-icon"
                     />
                     مرتب سازی:
                   </label>
-                  <select name="sort-transactions" id="sort-transactions">
+                  <select
+                    name="sort-transactions"
+                    id="sort-transactions"
+                    class="transactions__sort-select"
+                  >
                     <option value="همه" selected>همه</option>
                   </select>
                   <img
                     src="./assets/svg/icons/other/angle-down.svg"
                     alt="arrow-down"
+                    class="transactions__sort-arrow"
                   />
                 </div>
                 <div class="transactions__search">
-                  <input type="text" placeholder="جستجو" />
-                  <img src="./assets/svg/icons/other/search.svg" alt="search" />
+                  <input
+                    type="text"
+                    placeholder="جستجو"
+                    class="transactions__search-input"
+                  />
+                  <img
+                    src="./assets/svg/icons/other/search.svg"
+                    alt="search"
+                    class="transactions__search-icon"
+                  />
                 </div>
               </div>
             </div>
