@@ -308,7 +308,7 @@ html {
   bottom: 1.35rem;
   height: 3rem;
   cursor: pointer;
-  background: url(../svg/icons/outline/eye-closed.svg), #f9fafb;
+  background: url("../svg/icons/login/eye-closed.svg"), #f9fafb;
   background-position-y: center;
   background-position-x: right;
   background-repeat: no-repeat;
@@ -519,7 +519,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../svg/layouts/noise.svg), url(../svg/layouts/pattern.svg), no-repeat center;
+  background: url("../svg/textures/noise.svg"), url("../svg/textures/pattern.svg"), no-repeat center;
   background-size: contain;
   z-index: 0;
 }
@@ -625,10 +625,10 @@ html {
   background-size: cover;
 }
 .actions-menu__icon_change {
-  background-image: url(../svg/icons/outline/convert-card.svg);
+  background-image: url("../svg/icons/dashboard/convert-card.svg");
 }
 .actions-menu__icon_delete {
-  background-image: url(../svg/icons/other/exit.svg);
+  background-image: url("../svg/icons/common/exit.svg");
 }
 
 .box {
