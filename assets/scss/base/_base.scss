@@ -1,10 +1,17 @@
 body {
-  color: #3C4351;
   background-color: #f7f8fa;
+}
+
+img,
+svg,
+object {
+  object-fit: contain;
+  object-position: center;
+  display: block;
 }
 
 input,
 button {
-  font-family: 'Peyda';
-  font-size: 16px;
+  font-family: inherit;
+  font-size: inherit;
 }
