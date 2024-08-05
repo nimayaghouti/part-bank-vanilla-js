@@ -101,27 +101,41 @@
   padding: 0;
 }
 
-img, svg, object {
+body {
+  background-color: #f7f8fa;
+}
+
+img,
+svg,
+object {
   object-fit: contain;
   object-position: center;
   display: block;
 }
 
-body {
-  color: #3C4351;
-  background-color: #f7f8fa;
-}
-
 input,
 button {
-  font-family: "Peyda";
-  font-size: 16px;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 html {
-  font-family: "Peyda";
   font-size: 16px;
+}
+
+body {
+  font-family: "Peyda";
   direction: rtl;
+  color: var(--black-500);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
 }
 
 .container {
