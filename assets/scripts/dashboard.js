@@ -1,9 +1,15 @@
-const userPhone = document.querySelector(".user-info__tel");
+const phoneDisplayElement = document.querySelector(".user-info__phone");
+const storedUser = Storage.getItem('user');
 
-const user = JSON.parse(User.getUserFromLocalStorage());
+const formatPhoneToPersian = (phoneNumber) => {
+    if (!phoneNumber) return "";
+    
+    try {
+        return "۰" + parseInt(phoneNumber).toLocaleString("fa-IR").replace(/٬/g, "");
+    } catch (error) {
+        return "- - - - - -";
+    }
+};
 
-if (user) {
-    userPhone.textContent = "۰" + parseInt(user.phone).toLocaleString("fa-IR").replace(/٬/g, "");
-} else {
-    userPhone.textContent = "- - - - - -";
-}
+const formattedPhone = formatPhoneToPersian(storedUser?.phone);
+phoneDisplayElement.textContent = formattedPhone;

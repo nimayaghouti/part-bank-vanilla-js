@@ -37,12 +37,10 @@ const onSubmit = (event) => {
     submitText.classList.add('submit__text_loading');
     submitSpinner.classList.add('submit__spinner_loading');
 
-    // save user to localStorage (needs to change in another branch)
     const phoneInputValue = phoneInput.value;
     const passwordInputValue = passwordInput.value;
     const user = new User(phoneInputValue, passwordInputValue);
-    User.setUserToLocalStorage(user);
-    // 
+    Storage.setItem('user', user);
 
     setTimeout(() => {
         submitButton.disabled = false;
