@@ -243,7 +243,6 @@ html {
   align-items: stretch;
   justify-content: center;
   width: 60%;
-  gap: 2rem;
 }
 .form__control {
   display: flex;
@@ -252,6 +251,7 @@ html {
   justify-content: center;
   gap: 0.25rem;
   position: relative;
+  margin-bottom: 0.5rem;
 }
 .form__input, .form__submit {
   border-radius: 0.4rem;
@@ -262,6 +262,7 @@ html {
 }
 .form__label {
   color: #3c4351;
+  padding: 0 0.5rem;
 }
 .form__input {
   background-color: #f9fafb;
@@ -277,26 +278,34 @@ html {
   padding-left: 0.25rem;
 }
 .form__input:focus {
-  outline: 1px dashed var(--primary-50);
+  outline: none;
+  border: 2px solid var(--primary-200);
+}
+.form__input:focus + .form__toggle-password {
+  border: 2px solid var(--primary-200);
+  border-right: none;
 }
 .form__input::placeholder {
   font-weight: 400;
   color: #c3c5c9;
   font-size: 14px;
 }
+.form__validation-message {
+  padding: 0 0.5rem;
+  color: #8999b9;
+  font-size: 0.75rem;
+}
 .form__submit {
   color: white;
   background-color: var(--primary-500);
   cursor: pointer;
-  margin-top: 0.75rem;
-}
-.form__submit:active {
-  background-color: var(--primary-900);
+  margin-top: 1.5rem;
+  outline: none;
 }
 .form__toggle-password {
   position: absolute;
   left: 0rem;
-  bottom: 0;
+  bottom: 1.35rem;
   height: 3rem;
   cursor: pointer;
   background: url(../svg/icons/outline/eye-closed.svg), #f9fafb;
@@ -323,7 +332,7 @@ html {
 .submit__spinner {
   width: 25px;
   height: 25px;
-  border: 4px solid white;
+  border: 4px solid var(--black-500);
   border-radius: 50%;
   border-top-color: transparent;
   animation: rotate 1s linear infinite;
@@ -332,9 +341,16 @@ html {
 .submit__spinner_loading {
   display: block;
 }
+.submit:active {
+  background-color: #fff;
+  color: var(--black-500);
+  border: 1px solid var(--primary-500);
+}
 .submit:disabled {
   cursor: not-allowed;
-  background-color: var(--primary-500);
+  background-color: var(--primary-50);
+  color: var(--black-500);
+  border: none;
 }
 
 @keyframes rotate {
@@ -831,7 +847,9 @@ html {
   cursor: pointer;
 }
 .dialog__button:active {
-  background-color: var(--primary-700);
+  background-color: #fff;
+  color: var(--black-500);
+  border: 1px solid var(--primary-500);
 }
 
 /*# sourceMappingURL=main.css.map */
