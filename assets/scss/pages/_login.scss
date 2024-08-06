@@ -93,7 +93,6 @@
     }
 
     &:focus {
-      outline: none;
       border: 2px solid var(--primary-200);
     }
 
@@ -121,7 +120,7 @@
     background-color: var(--primary-500);
     cursor: pointer;
     margin-top: 1.5rem;
-    outline: none;
+    border-radius: 0.5rem;
   }
 
   &__toggle-password {
