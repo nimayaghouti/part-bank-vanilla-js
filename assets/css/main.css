@@ -103,6 +103,8 @@
 
 body {
   background-color: #f7f8fa;
+  font-family: "Peyda";
+  color: var(--black-500);
 }
 
 img,
@@ -121,12 +123,7 @@ button {
 
 html {
   font-size: 16px;
-}
-
-body {
-  font-family: "Peyda";
   direction: rtl;
-  color: var(--black-500);
 }
 
 h1,
@@ -698,18 +695,7 @@ h6 {
   background-color: var(--primary-200);
 }
 
-.installment__label {
-  color: #8999b9;
-  font-size: 0.875rem;
-  font-weight: 400;
-  margin: 0.25rem 0;
-}
-.installment__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.score__lable {
+.score__label, .installment__label {
   color: #8999b9;
   font-size: 0.875rem;
   font-weight: 400;
@@ -730,6 +716,14 @@ h6 {
 }
 .score__number {
   font-size: 1.25rem;
+}
+
+.installment__label {
+  margin: 0.25rem 0;
+}
+.installment__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .transactions {
