@@ -103,6 +103,8 @@
 
 body {
   background-color: #f7f8fa;
+  font-family: "Peyda";
+  color: var(--black-500);
 }
 
 img,
@@ -121,12 +123,7 @@ button {
 
 html {
   font-size: 16px;
-}
-
-body {
-  font-family: "Peyda";
   direction: rtl;
-  color: var(--black-500);
 }
 
 h1,
