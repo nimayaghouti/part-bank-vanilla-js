@@ -7,6 +7,7 @@
   @include flex($direction: column);
   background-color: rgb(247 248 250 / 84%);
   border: none;
+  z-index: 1;
 
   &__note {
     font-weight: 600;
