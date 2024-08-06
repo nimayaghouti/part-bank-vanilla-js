@@ -305,6 +305,7 @@ h6 {
   padding: 0 0.5rem;
   color: #8999b9;
   font-size: 0.75rem;
+  transition: color, opacity, 0.7s ease;
 }
 .form__submit {
   color: white;
@@ -834,6 +835,7 @@ h6 {
   justify-content: center;
   background-color: rgba(247, 248, 250, 0.84);
   border: none;
+  z-index: 1;
 }
 .dialog__note {
   font-weight: 600;
