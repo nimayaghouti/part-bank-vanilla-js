@@ -697,18 +697,7 @@ h6 {
   background-color: var(--primary-200);
 }
 
-.installment__label {
-  color: #8999b9;
-  font-size: 0.875rem;
-  font-weight: 400;
-  margin: 0.25rem 0;
-}
-.installment__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.score__lable {
+.score__label, .installment__label {
   color: #8999b9;
   font-size: 0.875rem;
   font-weight: 400;
@@ -729,6 +718,14 @@ h6 {
 }
 .score__number {
   font-size: 1.25rem;
+}
+
+.installment__label {
+  margin: 0.25rem 0;
+}
+.installment__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .transactions {

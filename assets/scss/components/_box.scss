@@ -54,21 +54,11 @@
   }
 }
 
-.installment {
-  &__label {
-    @include label;
-    margin: 0.25rem 0;
-  }
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .score {
-  &__lable {
-    @include label;
+  &__label {
+    color: #8999b9;
+    font-size: 0.875rem;
+    font-weight: 400;
   }
 
   &__control {
@@ -88,5 +78,17 @@
 
   &__number {
     font-size: 1.25rem;
+  }
+}
+
+.installment {
+  &__label {
+    @extend .score__label;
+    margin: 0.25rem 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
