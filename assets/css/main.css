@@ -479,7 +479,7 @@ h6 {
   height: 7.5rem;
   padding: 1rem 0.5rem;
 }
-.create-account__buttons {
+.create-account__buttons-wrapper {
   align-self: flex-end;
   display: flex;
   width: 27.125rem;
