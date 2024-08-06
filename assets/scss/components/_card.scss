@@ -18,8 +18,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(../svg/layouts/noise.svg), url(../svg/layouts/pattern.svg),
-      no-repeat center;
+    background: url('../svg/textures/noise.svg'),
+      url('../svg/textures/pattern.svg'), no-repeat center;
     background-size: contain;
     z-index: 0;
   }
@@ -123,11 +123,11 @@
     background-size: cover;
 
     &_change {
-      background-image: url(../svg/icons/outline/convert-card.svg);
+      background-image: url('../svg/icons/dashboard/convert-card.svg');
     }
 
     &_delete {
-      background-image: url(../svg/icons/other/exit.svg);
+      background-image: url('../svg/icons/common/exit.svg');
     }
   }
 }

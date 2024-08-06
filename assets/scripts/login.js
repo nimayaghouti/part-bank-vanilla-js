@@ -8,8 +8,8 @@ const submitSpinner = document.querySelector('.submit__spinner');
 
 const onToggle = () => {
     passwordInput.focus();
-    const iconOnShow = "url('./assets/svg/icons/outline/eye.svg')";
-    const iconOnHide = "url('./assets/svg/icons/outline/eye-closed.svg')";
+    const iconOnShow = "url('./assets/svg/icons/login/eye.svg')";
+    const iconOnHide = "url('./assets/svg/icons/login/eye-closed.svg')";
 
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
