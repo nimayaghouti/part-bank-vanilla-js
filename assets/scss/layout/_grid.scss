@@ -4,12 +4,15 @@
 .container {
   width: 100vw;
   height: 100vh;
-  
-  &_watch-header {
-    height: calc(100vh - $header-height);
+
+  &_login {
+    @include flex();
+    background: url('../image/login-background.png') no-repeat center center;
+    background-color: lightgray;
+    background-size: cover;
   }
 
-  &_flex-center {
-    @include flex();
+  &_watch-header {
+    height: calc(100vh - $header-height);
   }
 }

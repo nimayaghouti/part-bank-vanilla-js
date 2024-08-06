@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>پارت بانک - ثبت نام</title>
   </head>
-  
+
   <body>
-    <main class="container container_flex-center login-background">
+    <main class="container container_login">
       <div class="login">
         <div class="login__form-wrapper">
           <img
@@ -18,30 +18,35 @@
           />
 
           <form class="login__form form">
-            <div class="form__form-control">
-              <label for="phone">شماره همراه</label>
+            <div class="form__control">
+              <label class="form__label" for="phone-input">شماره همراه</label>
               <input
                 class="form__input"
                 type="tel"
-                id="phone"
+                id="phone-input"
                 placeholder="مثلا ۰۹۱۲۳۴۵۶۷۸۹"
-                pattern="[0-9]{11}"
+                pattern="[۰-۹]{11}"
+                maxlength="11"
                 autofocus
                 required
               />
+              <div class="form__validation-message">
+                شماره همراه خود را وارد کنید
+              </div>
             </div>
-            <div class="form__form-control">
-              <label for="pass">رمز عبور</label>
-              <div class="form__pass-wrapper">
-                <input
-                  class="form__input"
-                  type="password"
-                  id="pass"
-                  placeholder="رمز عبور"
-                  pattern="[A-Za-z0-9]{8,}"
-                  required
-                />
-                <span class="form__eye"></span>
+            <div class="form__control">
+              <label class="form__label" for="password-input">رمز عبور</label>
+              <input
+                class="form__input form__input_password"
+                type="password"
+                id="password-input"
+                placeholder="رمز عبور"
+                pattern="[A-Za-z0-9]{8,}"
+                required
+              />
+              <span class="form__toggle-password"></span>
+              <div class="form__validation-message">
+                رمز عبور خود را وارد کنید
               </div>
             </div>
             <button class="form__submit submit" type="submit" disabled>
@@ -61,7 +66,7 @@
         </div>
       </div>
     </main>
-    
+
     <script src="./assets/scripts/main.js"></script>
     <script src="./assets/scripts/login.js"></script>
   </body>

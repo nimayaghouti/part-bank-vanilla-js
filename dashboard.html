@@ -15,14 +15,14 @@
 
       <div class="header__user-info user-info">
         <div class="user-info__notifs">
-          <img src="./assets/svg/icons/other/notification.svg" alt="avatar" />
+          <img src="./assets/svg/icons/dashboard/notification.svg" alt="avatar" />
         </div>
         <div class="user-info__avatar">
           <img src="./assets/svg/flats/avatar.svg" alt="avatar" />
         </div>
-        <div class="user-info__tel"></div>
+        <div class="user-info__phone"></div>
         <div class="user-info__logout">
-          <img src="./assets/svg/icons/other/angle-down.svg" alt="angle down" />
+          <img src="./assets/svg/icons/common/angle-down.svg" alt="angle down" />
         </div>
       </div>
     </header>
@@ -39,10 +39,10 @@
           </div>
           <div class="sidebar__separator"></div>
           <ul class="sidebar__menu menu">
-            <li class="menu__item">
+            <li class="menu__item menu__item_active">
               <div class="menu__item-icon">
                 <img
-                  src="./assets/svg/icons/other/element-4.svg"
+                  src="./assets/svg/icons/dashboard/element-4.svg"
                   alt="dashboard icon"
                 />
               </div>
@@ -51,7 +51,7 @@
             <li class="menu__item">
               <div class="menu__item-icon">
                 <img
-                  src="./assets/svg/icons/other/wallet.svg"
+                  src="./assets/svg/icons/dashboard/wallet.svg"
                   alt="wallet icon"
                 />
               </div>
@@ -60,7 +60,7 @@
             <li class="menu__item">
               <div class="menu__item-icon">
                 <img
-                  src="./assets/svg/icons/other/strongbox-2.svg"
+                  src="./assets/svg/icons/dashboard/strongbox.svg"
                   alt="strong box icon"
                 />
               </div>
@@ -69,7 +69,7 @@
             <li class="menu__item">
               <div class="menu__item-icon">
                 <img
-                  src="./assets/svg/icons/other/cards.svg"
+                  src="./assets/svg/icons/dashboard/cards.svg"
                   alt="card operation icon"
                 />
               </div>
@@ -78,7 +78,7 @@
             <li class="menu__item">
               <div class="menu__item-icon">
                 <img
-                  src="./assets/svg/icons/other/receipt-search.svg"
+                  src="./assets/svg/icons/dashboard/receipt-search.svg"
                   alt="receipt-search icon"
                 />
               </div>
@@ -87,16 +87,16 @@
             <li class="menu__item">
               <div class="menu__item-icon">
                 <img
-                  src="./assets/svg/icons/other/card-pos.svg"
+                  src="./assets/svg/icons/dashboard/card-pos.svg"
                   alt="services icon"
                 />
               </div>
               خدمات
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__item_exit">
               <div class="menu__item-icon">
                 <img
-                  src="./assets/svg/icons/other/exit.svg"
+                  src="./assets/svg/icons/common/exit.svg"
                   alt="logout icon"
                 />
               </div>
@@ -111,7 +111,7 @@
               <div class="card__header">
                 <div class="card__actions-btn actions-btn">
                   <img
-                    src="./assets/svg/icons/linear/more.svg"
+                    src="./assets/svg/icons/common/more.svg"
                     alt="more-button"
                     class="actions-btn__icon"
                   />
@@ -143,7 +143,7 @@
               <div class="box__top-part">
                 <div class="box__title">امتیاز حساب</div>
                 <div class="box__more">
-                  <img src="./assets/svg/icons/bold/info-circle.svg" />
+                  <img src="./assets/svg/icons/common/circle-info-bold.svg" />
                 </div>
               </div>
 
@@ -166,7 +166,7 @@
                 <div class="box__title">قسط پیش رو</div>
                 <div class="box__more">
                   جزئیات
-                  <img src="./assets/svg/icons/other/angle-left.svg" />
+                  <img src="./assets/svg/icons/common/angle-left.svg" />
                 </div>
               </div>
 
@@ -183,37 +183,54 @@
 
               <button class="box__button">
                 پرداخت
-                <img src="./assets/svg/icons/linear/arrow-left.svg" />
+                <img src="./assets/svg/icons/common/arrow-left.svg" />
               </button>
             </div>
           </div>
 
           <div class="info__transactions transactions">
             <div class="transactions__header">
-              <h3>
+              <h3 class="transactions__title">
                 لیست تراکنش‌ها
                 <div class="transactions__currency">(ریال)</div>
               </h3>
               <div class="transactions__tools">
                 <div class="transactions__sort">
-                  <label for="sort-transactions">
+                  <label
+                    for="sort-transactions"
+                    class="transactions__sort-label"
+                  >
                     <img
-                      src="./assets/svg/icons/other/fluent-arrow.svg"
+                      src="./assets/svg/icons/dashboard/fluent-arrow.svg"
                       alt="sort"
+                      class="transactions__sort-icon"
                     />
                     مرتب سازی:
                   </label>
-                  <select name="sort-transactions" id="sort-transactions">
+                  <select
+                    name="sort-transactions"
+                    id="sort-transactions"
+                    class="transactions__sort-select"
+                  >
                     <option value="همه" selected>همه</option>
                   </select>
                   <img
-                    src="./assets/svg/icons/other/angle-down.svg"
+                    src="./assets/svg/icons/common/angle-down.svg"
                     alt="arrow-down"
+                    class="transactions__sort-arrow"
                   />
                 </div>
                 <div class="transactions__search">
-                  <input type="text" placeholder="جستجو" />
-                  <img src="./assets/svg/icons/other/search.svg" alt="search" />
+                  <input
+                    type="text"
+                    placeholder="جستجو"
+                    class="transactions__search-input"
+                  />
+                  <img
+                    src="./assets/svg/icons/common/search.svg"
+                    alt="search"
+                    class="transactions__search-icon"
+                  />
                 </div>
               </div>
             </div>
