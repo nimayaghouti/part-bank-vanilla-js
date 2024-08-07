@@ -14,9 +14,10 @@ class User {
     load() {
         const storedData = this.#storage.getItem('userData');
         if (storedData) {
-            this.#data = storedData;
+            return storedData;
+        } else {
+            return ({ message: 'no data!' });
         }
-        return this.#data;
     }
 
     clear() {

@@ -1,7 +1,7 @@
 const phoneDisplayElement = document.querySelector(".user-info__phone");
-const storedUser = Storage.getItem('user');
 
-phoneDisplayElement.textContent = storedUser?.phone;
+// const storedUser = Storage.getItem('user');
+// phoneDisplayElement.textContent = storedUser?.phone;
 
 
 // TODO: GET transactions API and use them instead of fake-data.js
