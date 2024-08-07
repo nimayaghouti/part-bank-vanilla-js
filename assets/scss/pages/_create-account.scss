@@ -19,6 +19,14 @@
     background-color: #e2edff;
   }
 
+  &__snackbar {
+    position: fixed;
+    bottom: 3rem;
+    right: 0;
+  }
+
+  //////////////////////////////////////
+
   &__form {
     width: 100%;
     @include flex($direction: column);
@@ -28,20 +36,33 @@
   &__form-row {
     width: 100%;
     @include flex($justify: space-between);
-    flex-shrink: 1;
     gap: 2rem;
+
+    &_confirm {
+      @include flex($justify: flex-start);
+      gap: 7.5rem;
+    }
   }
 
   &__form-control {
     @include flex($direction: column, $align: flex-start);
     gap: 0.25rem;
     flex-grow: 1;
+
+    &_confirm {
+      flex-grow: 0;
+      width: 9.375rem;
+    }
   }
 
   &__label {
     height: 1.75rem;
     padding: 0rem 0.5rem;
     @include text-style($color: #8999b9, $size: 0.875rem, $weight: 600);
+
+    &_confirm{
+      font-weight: 400;
+    }
   }
 
   &__input,
@@ -59,17 +80,31 @@
     &::placeholder {
       @include text-style($color: #c3c5c9, $size: 0.875rem, $weight: 400);
     }
+
+    &:disabled {
+      background: none;
+      border: none;
+      height: 1.4rem;
+    }
   }
 
   &__input {
     height: 3rem;
     padding: 0rem 0.5rem;
+
+    &:disabled {
+      min-width: 10rem;
+    }
   }
 
   &__textarea {
     resize: none;
     height: 7.5rem;
     padding: 1rem 0.5rem;
+
+    &:disabled {
+      min-width: 28rem;
+    }
   }
 
   &__cards-wrapper {

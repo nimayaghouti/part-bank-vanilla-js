@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>پارت بانک - داشبورد</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./assets/svg/logos/logo-simple.svg" alt="angle down" />
+        پارت بانک
+      </div>
+
+      <div class="header__user-info user-info">
+        <div class="user-info__notifs">
+          <img src="./assets/svg/icons/dashboard/notification.svg" alt="avatar" />
+        </div>
+        <div class="user-info__avatar">
+          <img src="./assets/svg/flats/avatar.svg" alt="avatar" />
+        </div>
+        <div class="user-info__phone"></div>
+        <div class="user-info__logout">
+          <img src="./assets/svg/icons/common/angle-down.svg" alt="angle down" />
+        </div>
+      </div>
+    </header>
+
+    <main class="container container_watch-header">
+      <div class="dashboard">
+        <aside class="dashboard__sidebar sidebar">
+          <div class="sidebar__header">
+            <div class="sidebar__user-name">محمد جواد رحمانی نسب</div>
+            <div class="sidebar__user-id user-id">
+              <div class="user-id__label">کد ملی:</div>
+              <div class="user-id__number">۰۹۱۲۳۴۵۶۷۸</div>
+            </div>
+          </div>
+          <div class="sidebar__separator"></div>
+          <ul class="sidebar__menu menu">
+            <li class="menu__item menu__item_active">
+              <div class="menu__item-icon">
+                <img
+                  src="./assets/svg/icons/dashboard/element-4.svg"
+                  alt="dashboard icon"
+                />
+              </div>
+              داشبورد
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-icon">
+                <img
+                  src="./assets/svg/icons/dashboard/wallet.svg"
+                  alt="wallet icon"
+                />
+              </div>
+              حساب
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-icon">
+                <img
+                  src="./assets/svg/icons/dashboard/strongbox.svg"
+                  alt="strong box icon"
+                />
+              </div>
+              تسهیلات
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-icon">
+                <img
+                  src="./assets/svg/icons/dashboard/cards.svg"
+                  alt="card operation icon"
+                />
+              </div>
+              عملیات کارت
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-icon">
+                <img
+                  src="./assets/svg/icons/dashboard/receipt-search.svg"
+                  alt="receipt-search icon"
+                />
+              </div>
+              سفته الکترونیک
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-icon">
+                <img
+                  src="./assets/svg/icons/dashboard/card-pos.svg"
+                  alt="services icon"
+                />
+              </div>
+              خدمات
+            </li>
+            <li class="menu__item menu__item_exit">
+              <div class="menu__item-icon">
+                <img
+                  src="./assets/svg/icons/common/exit.svg"
+                  alt="logout icon"
+                />
+              </div>
+              خروج
+            </li>
+          </ul>
+        </aside>
+
+        <section class="dashboard__info info">
+          <div class="info__wrapper">
+            <div class="info__card card">
+              <div class="card__header">
+                <div class="card__actions-btn actions-btn">
+                  <img
+                    src="./assets/svg/icons/common/more.svg"
+                    alt="more-button"
+                    class="actions-btn__icon"
+                  />
+                  <div class="actions-btn__menu actions-menu">
+                    <div class="actions-menu__item">
+                      <div
+                        class="actions-menu__icon actions-menu__icon_change"
+                      ></div>
+                      تغییر حساب متصل
+                    </div>
+                    <div class="actions-btn__separator"></div>
+                    <div class="actions-menu__item">
+                      <div
+                        class="actions-menu__icon actions-menu__icon_delete"
+                      ></div>
+                      حذف حساب بانکی
+                    </div>
+                  </div>
+                </div>
+                <div class="card__balance-info">
+                  <p class="card__balance-title">موجودی کل</p>
+                  <p class="card__balance-amount">۰</p>
+                </div>
+              </div>
+              <div class="card__number-group"></div>
+            </div>
+
+            <div class="info__box box">
+              <div class="box__top-part">
+                <div class="box__title">امتیاز حساب</div>
+                <div class="box__more">
+                  <img src="./assets/svg/icons/common/circle-info-bold.svg" />
+                </div>
+              </div>
+
+              <div class="box__score score">
+                <div class="score__control">
+                  <span class="score__money">۰</span>
+                  <span class="score__label">ریال</span>
+                </div>
+                <div class="score__control">
+                  <span class="score__number">۰</span>
+                  <span class="score__label">ماهه</span>
+                </div>
+              </div>
+
+              <button class="box__button">محاسبه امتیاز</button>
+            </div>
+
+            <div class="info__box box">
+              <div class="box__top-part">
+                <div class="box__title">قسط پیش رو</div>
+                <div class="box__more">
+                  جزئیات
+                  <img src="./assets/svg/icons/common/angle-left.svg" />
+                </div>
+              </div>
+
+              <div class="box__installment installment">
+                <div class="installment__wrapper">
+                  <span class="installment__label">مبلغ قسط:</span>
+                  <span class="installment__number">۰</span>
+                </div>
+                <div class="installment__wrapper">
+                  <span class="installment__label">تاریخ سررسید:</span>
+                  <span class="installment__number">-</span>
+                </div>
+              </div>
+
+              <button class="box__button">
+                پرداخت
+                <img src="./assets/svg/icons/common/arrow-left.svg" />
+              </button>
+            </div>
+          </div>
+
+          <div class="info__transactions transactions">
+            <div class="transactions__header">
+              <h3 class="transactions__title">
+                لیست تراکنش‌ها
+                <div class="transactions__currency">(ریال)</div>
+              </h3>
+              <div class="transactions__tools">
+                <div class="transactions__sort">
+                  <label
+                    for="sort-transactions"
+                    class="transactions__sort-label"
+                  >
+                    <img
+                      src="./assets/svg/icons/dashboard/fluent-arrow.svg"
+                      alt="sort"
+                      class="transactions__sort-icon"
+                    />
+                    مرتب سازی:
+                  </label>
+                  <select
+                    name="sort-transactions"
+                    id="sort-transactions"
+                    class="transactions__sort-select"
+                  >
+                    <option value="همه" selected>همه</option>
+                  </select>
+                  <img
+                    src="./assets/svg/icons/common/angle-down.svg"
+                    alt="arrow-down"
+                    class="transactions__sort-arrow"
+                  />
+                </div>
+                <div class="transactions__search">
+                  <input
+                    type="text"
+                    placeholder="جستجو"
+                    class="transactions__search-input"
+                  />
+                  <img
+                    src="./assets/svg/icons/common/search.svg"
+                    alt="search"
+                    class="transactions__search-icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info__dialog dialog">
+            <img src="./assets/svg/flats/empty-state-illustration.svg" />
+            <span class="dialog__note">
+              برای دسترسی به داشبورد، لطفا ابتدا افتتاح حساب کنید
+            </span>
+            <button class="dialog__button">افتتاح حساب</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/dashboard-inactive.js"></script>
+  </body>
+</html>

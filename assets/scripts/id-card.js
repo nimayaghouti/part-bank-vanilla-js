@@ -4,6 +4,8 @@ const optionsFrontImage = document.querySelector('.id-card__options_front');
 const optionsbackImage = document.querySelector('.id-card__options_back');
 const fileInputFrontImage = document.querySelector('#file-input-front-image');
 const fileInputBackImage = document.querySelector('#file-input-back-image');
+const nextButton = document.querySelector('.button_primary');
+const previousButton = document.querySelector('.button_secondary');
 
 const appendImage = (file, targetElement, targetOptions) => {
   if (file) {
@@ -36,4 +38,14 @@ cardFrontImage.addEventListener('click', () => {
 
 cardBackImage.addEventListener('click', () => {
   fileInputBackImage.click();
+});
+
+nextButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.location = 'confirm-info.html';
+});
+
+previousButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.location = 'personal-info.html';
 });

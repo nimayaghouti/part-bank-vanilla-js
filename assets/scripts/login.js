@@ -69,7 +69,7 @@ const handleSubmitClick = (event) => {
         submitText.classList.remove('submit__text_loading');
         submitSpinner.classList.remove('submit__spinner_loading');
 
-        window.location.href = 'dashboard.html';
+        window.location.href = 'dashboard-inactive.html';
     }, 3000);
 };
 submitButton.addEventListener('click', handleSubmitClick);
