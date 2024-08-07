@@ -7,9 +7,19 @@
   @include border-radius($radius: 0.75rem);
   padding: 1.5rem 1.5rem 1rem;
   @include box-shadow();
+  display: flex;
+  flex-direction: column;
 
   &__header {
     @include flex($justify: space-between);
+  }
+
+  &__table {
+    margin-top: 1.5rem;
+  }
+
+  &__pagination {
+    margin-top: auto;
   }
 
   &__title {
@@ -92,5 +102,92 @@
     left: 0rem;
     background-color: #eceef6;
     padding: 0.4rem 0.4rem 0.5rem 0.5rem;
+  }
+}
+
+//////////////////////////////////////////////////
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+
+  tr,
+  &__head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  &__head {
+    color: white;
+    background-color: var(--primary-500);
+  }
+
+  tr {
+    height: 3.8rem;
+  }
+
+  // td {
+  //   @include flex();
+  // }
+
+  ////////////////////////////////////////////
+
+  &__body tr td:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__body tr td:not(:nth-child(1)) {
+    direction: ltr;
+  }
+
+  &__body tr:nth-child(odd) {
+    background-color: white;
+  }
+
+  &__body tr:nth-child(even) {
+    background-color: var(--common-surface-lightBlue);
+  }
+}
+
+//////////////////////////////////////////////////
+
+.pagination {
+  @include flex;
+  gap: 16px;
+
+  &__dynamic-buttons-wrapper {
+    @extend .pagination;
+  }
+
+  &__dynamic-button {
+    &_selected {
+      color: white;
+      background-color: var(--primary-500);
+      transition: color, background-color, 0.5s ease;
+    }
+  }
+
+  button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--common-gray);
+
+    &:active {
+      @extend .pagination__dynamic-button_selected;
+    }
   }
 }
