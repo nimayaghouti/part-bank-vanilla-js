@@ -1,0 +1,154 @@
+@use '../utils/mixins' as *;
+
+.id-card {
+  @include flex(column);
+  @include border-radius(0.75rem);
+  width: 20rem;
+  overflow: hidden;
+
+  &__image {
+    @include flex($direction: column);
+    width: 100%;
+    height: 11.25rem;
+    position: relative;
+    border: 1px dashed #e2edff;
+    border-radius: 0.75rem 0.75rem 0 0;
+    background-color: #f9fafb;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__upload-text {
+    @include text-style(#8999b9, 0.875rem, 600);
+    text-align: center;
+
+    &_highlight {
+      color: var(--primary-500);
+    }
+  }
+
+  &__footer {
+    @include flex($justify: space-between);
+    width: 100%;
+    height: 3.25rem;
+    padding: 1rem 0.75rem;
+    background-color: #f9fafb;
+  }
+
+  &__description {
+    @include text-style($size: 0.875rem);
+  }
+
+  &__options {
+    width: 20px;
+    height: 20px;
+    position: relative;
+
+    &_front,
+    &_back {
+      display: none;
+      pointer-events: none;
+    }
+
+    &:hover .options-menu {
+      cursor: pointer;
+      bottom: -4px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__options-icon {
+    position: relative;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #8999b9;
+      mix-blend-mode: lighten;
+      top: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.options-menu {
+  @include flex(column, $align: flex-start);
+  @include border-radius();
+  @include box-shadow();
+  @include text-style();
+  padding: 8px 12px;
+  gap: 8px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 14px;
+  left: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+
+  &__item {
+    @include flex();
+    gap: 8px;
+
+    &_delete {
+      color: var(--fail-500);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    position: relative;
+
+    &_edit {
+      background-image: url(../svg/icons/common/edit.svg);
+      background-size: cover;
+    }
+
+    &_delete {
+      background-image: url(../svg/icons/common/trash.svg);
+      background-size: cover;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: var(--fail-500);
+        mix-blend-mode: lighten;
+        top: 0;
+      }
+    }
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background-color: #e2edff;
+  }
+}
+
+#file-input-front-image,
+#file-input-back-image {
+  display: none;
+}
