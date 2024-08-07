@@ -39,6 +39,7 @@
   --success-700: #008857;
   --success-800: #006943;
   --success-900: #005033;
+  --snackbar-width: 20rem;
 }
 
 @font-face {
@@ -424,6 +425,11 @@ h6 {
   height: 0.0625rem;
   background-color: #e2edff;
 }
+.create-account__snackbar {
+  position: fixed;
+  bottom: 3rem;
+  right: 0;
+}
 .create-account__form {
   width: 100%;
   display: flex;
@@ -438,8 +444,14 @@ h6 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-shrink: 1;
   gap: 2rem;
+}
+.create-account__form-row_confirm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7.5rem;
 }
 .create-account__form-control {
   display: flex;
@@ -449,12 +461,19 @@ h6 {
   gap: 0.25rem;
   flex-grow: 1;
 }
+.create-account__form-control_confirm {
+  flex-grow: 0;
+  width: 9.375rem;
+}
 .create-account__label {
   height: 1.75rem;
   padding: 0rem 0.5rem;
   color: #8999b9;
   font-size: 0.875rem;
   font-weight: 600;
+}
+.create-account__label_confirm {
+  font-weight: 400;
 }
 .create-account__input, .create-account__textarea {
   width: 100%;
@@ -470,14 +489,25 @@ h6 {
   font-size: 0.875rem;
   font-weight: 400;
 }
+.create-account__input:disabled, .create-account__textarea:disabled {
+  background: none;
+  border: none;
+  height: 1.4rem;
+}
 .create-account__input {
   height: 3rem;
   padding: 0rem 0.5rem;
+}
+.create-account__input:disabled {
+  min-width: 10rem;
 }
 .create-account__textarea {
   resize: none;
   height: 7.5rem;
   padding: 1rem 0.5rem;
+}
+.create-account__textarea:disabled {
+  min-width: 28rem;
 }
 .create-account__cards-wrapper {
   display: flex;
@@ -1123,6 +1153,26 @@ h6 {
 #file-input-front-image,
 #file-input-back-image {
   display: none;
+}
+
+.snackbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 20rem;
+  height: 3.75rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity, right, 0.7s ease-in-out;
+}
+.snackbar_error {
+  color: #fff;
+  background-color: var(--fail-500);
+}
+.snackbar_notif {
+  color: #fff;
+  background-color: var(--primary-500);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <title>پارت بانک - داشبورد</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="../../assets/svg/logos/logo-simple.svg" alt="angle down" />
+        پارت بانک
+      </div>
+
+      <div class="header__user-info user-info">
+        <div class="user-info__notifs">
+          <img
+            src="../../assets/svg/icons/dashboard/notification.svg"
+            alt="avatar"
+          />
+        </div>
+        <div class="user-info__avatar">
+          <img src="../../assets/svg/flats/avatar.svg" alt="avatar" />
+        </div>
+        <div class="user-info__phone"></div>
+        <div class="user-info__logout">
+          <img
+            src="../../assets/svg/icons/common/angle-down.svg"
+            alt="angle down"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="container container_watch-header">
+      <div class="create-account">
+        <h2 class="create-account__title">تایید اطلاعات</h2>
+        <div class="create-account__seperator"></div>
+        <form class="create-account__form">
+          <div
+            class="create-account__form-row create-account__form-row_confirm"
+          >
+            <div
+              class="create-account__form-control create-account__form-control_confirm"
+            >
+              <label
+                class="create-account__label create-account__label_confirm"
+                for="first-name"
+                >نام</label
+              >
+              <input
+                class="create-account__input"
+                type="text"
+                placeholder="نام فارسی"
+                id="first-name"
+                name="first-name"
+                value="بهنام"
+                disabled
+              />
+            </div>
+            <div
+              class="create-account__form-control create-account__form-control_confirm"
+            >
+              <label
+                class="create-account__label create-account__label_confirm"
+                for="last-name"
+                >نام خانوادگی</label
+              >
+              <input
+                class="create-account__input"
+                type="text"
+                placeholder="نام خانوادگی به صورت کامل"
+                id="last-name"
+                name="last-name"
+                value="وهانی"
+                disabled
+              />
+            </div>
+            <div
+              class="create-account__form-control create-account__form-control_confirm"
+            >
+              <label
+                class="create-account__label create-account__label_confirm"
+                for="postal-code"
+                >کدپستی</label
+              >
+              <input
+                class="create-account__input"
+                type="text"
+                placeholder="کدپستی ۱۰ رقمی"
+                id="postal-code"
+                name="postal-code"
+                value="۹۱۷۵۶۸۷۴۲۳"
+                disabled
+              />
+            </div>
+          </div>
+          <div
+            class="create-account__form-row create-account__form-row_confirm"
+          >
+            <div
+              class="create-account__form-control create-account__form-control_confirm"
+            >
+              <label
+                class="create-account__label create-account__label_confirm"
+                for="address"
+                >محل سکونت</label
+              >
+              <input
+                class="create-account__textarea"
+                placeholder="محل سکونت"
+                name="address"
+                id="address"
+                value="بولوار ملک آباد ، خیام جنوبی ۱۳ ، گلایل ۱۰ ، پلاک۱۲۳ ، واحد۱"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="create-account__buttons-wrapper">
+            <button class="create-account__button button button_secondary">
+              قبلی
+            </button>
+            <button class="create-account__button button button_primary">
+              ثبت و ادامه
+            </button>
+          </div>
+        </form>
+
+        <div class="create-account__snackbar snackbar snackbar_error">
+          <img src="../../assets/svg/icons/common/circle-error.svg" />
+          <span>خطا در برقراری ارتباط با سرور</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="../../assets/scripts/main.js"></script>
+    <script src="../../assets/scripts/confirm-info.js"></script>
+  </body>
+</html>
