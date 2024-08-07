@@ -72,6 +72,11 @@
     padding: 1rem 0.5rem;
   }
 
+  &__cards-wrapper {
+    display: flex;
+    gap: 2.5rem;
+  }
+
   &__buttons-wrapper {
     align-self: flex-end;
     display: flex;

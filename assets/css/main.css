@@ -479,6 +479,10 @@ h6 {
   height: 7.5rem;
   padding: 1rem 0.5rem;
 }
+.create-account__cards-wrapper {
+  display: flex;
+  gap: 2.5rem;
+}
 .create-account__buttons-wrapper {
   align-self: flex-end;
   display: flex;
@@ -966,6 +970,159 @@ h6 {
 .button_secondary {
   background-color: var(--primary-50);
   color: var(--black-500);
+}
+
+.id-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  width: 20rem;
+  overflow: hidden;
+}
+.id-card__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 11.25rem;
+  position: relative;
+  border: 1px dashed #e2edff;
+  border-radius: 0.75rem 0.75rem 0 0;
+  background-color: #f9fafb;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.id-card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+.id-card__upload-text {
+  color: #8999b9;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+.id-card__upload-text_highlight {
+  color: var(--primary-500);
+}
+.id-card__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.25rem;
+  padding: 1rem 0.75rem;
+  background-color: #f9fafb;
+}
+.id-card__description {
+  color: var(--black-500);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.id-card__options {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.id-card__options_front, .id-card__options_back {
+  display: none;
+  pointer-events: none;
+}
+.id-card__options:hover .options-menu {
+  cursor: pointer;
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+.id-card__options-icon {
+  position: relative;
+}
+.id-card__options-icon img {
+  width: 100%;
+  height: 100%;
+}
+.id-card__options-icon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #8999b9;
+  mix-blend-mode: lighten;
+  top: 0;
+}
+.id-card__options-icon:hover {
+  cursor: pointer;
+}
+
+.options-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 67, 101, 0.05);
+  color: var(--black-500);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 12px;
+  gap: 8px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 14px;
+  left: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.options-menu__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.options-menu__item_delete {
+  color: var(--fail-500);
+}
+.options-menu__icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.options-menu__icon_edit {
+  background-image: url(../svg/icons/common/edit.svg);
+  background-size: cover;
+}
+.options-menu__icon_delete {
+  background-image: url(../svg/icons/common/trash.svg);
+  background-size: cover;
+}
+.options-menu__icon_delete::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--fail-500);
+  mix-blend-mode: lighten;
+  top: 0;
+}
+.options-menu__separator {
+  width: 100%;
+  height: 1px;
+  background-color: #e2edff;
+}
+
+#file-input-front-image,
+#file-input-back-image {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
