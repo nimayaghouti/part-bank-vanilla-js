@@ -51,6 +51,7 @@ const togglePasswordType = () => {
 };
 togglePasswordButton.addEventListener('click', togglePasswordType);
 
+let localUser;
 
 const handleSubmitClick = (event) => {
     event.preventDefault();
@@ -59,10 +60,15 @@ const handleSubmitClick = (event) => {
     submitText.classList.add('submit__text_loading');
     submitSpinner.classList.add('submit__spinner_loading');
 
-    const phoneInputValue = phoneInput.value;
+    // const phoneInputValue = phoneInput.value;
+    const phoneInputValue = 1234567890;
     const passwordInputValue = passwordInput.value;
-    const user = new User(phoneInputValue, passwordInputValue);
-    Storage.setItem('user', user);
+    const userData = {
+        phone: phoneInputValue,
+        password: passwordInputValue
+    };
+    localUser = new User(userData, new CustomLocalStorage());
+    localUser.save();
 
     setTimeout(() => {
         submitButton.disabled = false;

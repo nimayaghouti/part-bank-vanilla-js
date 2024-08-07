@@ -158,23 +158,27 @@
 
 //////////////////////////////////////////////////
 
-.pagination {
+%pagination-styles {
   @include flex;
   gap: 16px;
+}
+
+.pagination {
+  @extend %pagination-styles;
 
   &__dynamic-buttons-wrapper {
-    @extend .pagination;
+    @extend %pagination-styles;
   }
 
-  &__dynamic-button {
-    &_selected {
-      color: white;
-      background-color: var(--primary-500);
-      transition: color, background-color, 0.5s ease;
-    }
+  %active-styles {
+    color: white;
+    background-color: var(--primary-500);
+    transition: color, background-color, 0.5s ease;
   }
 
-  button {
+  &__dynamic-button,
+  &__previous,
+  &__next {
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -187,7 +191,13 @@
     color: var(--common-gray);
 
     &:active {
-      @extend .pagination__dynamic-button_selected;
+      @extend %active-styles;
+    }
+  }
+
+  &__dynamic-button {
+    &_selected {
+      @extend %active-styles;
     }
   }
 }
