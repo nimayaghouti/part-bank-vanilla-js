@@ -1,21 +1,26 @@
-@use "palette" as *;
+@use 'palette' as *;
+
+$header-height: 4.25rem;
+$snackbar-width: 20rem;
 
 :root {
-    @each $key, $value in $primary {
-      --#{$key}: #{$value};
-    }
-  
-    @each $key, $value in $black {
-      --#{$key}: #{$value};
-    }
-  
-    @each $key, $value in $fail {
-      --#{$key}: #{$value};
-    }
-  
-    @each $key, $value in $success {
-      --#{$key}: #{$value};
-    }
+  // palette:
+  @each $key, $value in $primary {
+    --#{$key}: #{$value};
   }
 
-  $header-height: 4.25rem;
+  @each $key, $value in $black {
+    --#{$key}: #{$value};
+  }
+
+  @each $key, $value in $fail {
+    --#{$key}: #{$value};
+  }
+
+  @each $key, $value in $success {
+    --#{$key}: #{$value};
+  }
+
+  // variables
+  --snackbar-width: #{$snackbar-width};
+}

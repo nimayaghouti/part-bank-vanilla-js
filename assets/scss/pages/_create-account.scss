@@ -1,0 +1,126 @@
+@use '../utils/mixins' as *;
+
+.create-account {
+  @include flex($direction: column);
+  width: 90%;
+  max-width: 87.5rem;
+  padding: 2.5rem;
+  gap: 2.5rem;
+  border-radius: 0.75rem;
+  background: #fff;
+
+  &__title {
+    @include text-style($size: 1.25rem, $weight: 700);
+  }
+
+  &__seperator {
+    width: 100%;
+    height: 0.0625rem;
+    background-color: #e2edff;
+  }
+
+  &__snackbar {
+    position: fixed;
+    bottom: 3rem;
+    right: 0;
+  }
+
+  //////////////////////////////////////
+
+  &__form {
+    width: 100%;
+    @include flex($direction: column);
+    gap: 2.5rem;
+  }
+
+  &__form-row {
+    width: 100%;
+    @include flex($justify: space-between);
+    gap: 2rem;
+
+    &_confirm {
+      @include flex($justify: flex-start);
+      gap: 7.5rem;
+    }
+  }
+
+  &__form-control {
+    @include flex($direction: column, $align: flex-start);
+    gap: 0.25rem;
+    flex-grow: 1;
+
+    &_confirm {
+      flex-grow: 0;
+      width: 9.375rem;
+    }
+  }
+
+  &__label {
+    height: 1.75rem;
+    padding: 0rem 0.5rem;
+    @include text-style($color: #8999b9, $size: 0.875rem, $weight: 600);
+
+    &_confirm{
+      font-weight: 400;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid var(--black-50);
+    background: #f9fafb;
+    @include text-style(
+      $color: var(--black-500),
+      $size: 0.875rem,
+      $weight: 600
+    );
+
+    &::placeholder {
+      @include text-style($color: #c3c5c9, $size: 0.875rem, $weight: 400);
+    }
+
+    &:disabled {
+      background: none;
+      border: none;
+      height: 1.4rem;
+    }
+  }
+
+  &__input {
+    height: 3rem;
+    padding: 0rem 0.5rem;
+
+    &:disabled {
+      min-width: 10rem;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 7.5rem;
+    padding: 1rem 0.5rem;
+
+    &:disabled {
+      min-width: 28rem;
+    }
+  }
+
+  &__cards-wrapper {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  &__buttons-wrapper {
+    align-self: flex-end;
+    display: flex;
+    width: 27.125rem;
+    height: 3rem;
+    gap: 1rem;
+  }
+
+  &__button {
+    max-width: 13rem;
+  }
+}
