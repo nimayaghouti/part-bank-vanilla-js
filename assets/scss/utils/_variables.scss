@@ -21,6 +21,10 @@ $snackbar-width: 20rem;
     --#{$key}: #{$value};
   }
 
+  @each $key, $value in $common {
+    --#{$key}: #{$value};
+  }
+
   // variables
   --snackbar-width: #{$snackbar-width};
 }
