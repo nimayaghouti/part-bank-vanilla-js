@@ -116,15 +116,22 @@ const handleSubmit = async (event) => {
     const passwordInputValue = passwordInput.value;
 
     const data = await handleLogin(phoneInputValue, passwordInputValue);
-    console.log('User data:', data);
 
-    // const user = new User(phoneInputValue, passwordInputValue);
-    // Storage.setItem('user', user);
+    const userData = {
+      firstName: data.firstName,
+      lastName: data.lastName,
+      idNumber: data.idNumber,
+      token: data.token,
+      refreshToken: data.refreshToken,
+    };
 
-    // window.location.href = 'dashboard-inactive.html';
+    const localUser = new User(userData, new CustomLocalStorage());
+    localUser.save();
+
+    window.location.href = 'dashboard-inactive.html';
   } catch (error) {
     console.error('Error during login:', error);
-    alert('Login failed. Please check your credentials and try again.');
+    alert('نام کاربری یا رمز عبور اشتباه است.');
   } finally {
     setLoadingState(false);
   }
