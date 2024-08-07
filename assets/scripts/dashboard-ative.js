@@ -4,7 +4,7 @@ const storedUser = Storage.getItem('user');
 phoneDisplayElement.textContent = storedUser?.phone;
 
 
-
+// TODO: GET transactions API and use them instead of fake-data.js
 
 // getting data //////////////////////////////
 const tableData = data;
@@ -50,7 +50,7 @@ function refreshTbody() {
 
 // refresh styles of number buttons
 function refreshButtons(remove = false) {
-    const selectedPageButton = document.querySelector(`pagination__dynamic-button-${currentPage}`);
+    const selectedPageButton = document.querySelector(`#pagination__dynamic-button-${currentPage}`);
     if (!selectedPageButton) return;
     if (remove) {
         selectedPageButton.classList.remove('pagination__dynamic-button_selected');
@@ -71,7 +71,7 @@ function refresh(cp) {
 for (let i = 1; i <= lastPage; i++) {
     const pageButton = document.createElement('button');
 
-    pageButton.setAttribute("class", `pagination__dynamic-button-${i}`);
+    pageButton.setAttribute("id", `pagination__dynamic-button-${i}`);
     pageButton.innerHTML = i.toLocaleString("fa-IR");
     pageButton.addEventListener('click', () => {
         refresh(i);
