@@ -2,8 +2,12 @@ import instance, { setToken } from '../services/apiService.js';
 
 const phoneInput = document.querySelector('#phone-input');
 const passwordInput = document.querySelector('#password-input');
-const phoneInputMessage = document.querySelector('#phone-input ~ .form__validation-message');
-const passwordInputMessage = document.querySelector('#password-input ~ .form__validation-message');
+const phoneInputMessage = document.querySelector(
+  '#phone-input ~ .form__validation-message'
+);
+const passwordInputMessage = document.querySelector(
+  '#password-input ~ .form__validation-message'
+);
 const togglePasswordButton = document.querySelector('.form__toggle-password');
 const submitButton = document.querySelector('.form__submit');
 const submitText = document.querySelector('.submit__text');
@@ -59,7 +63,6 @@ passwordInput.addEventListener('input', () => {
   setSubmitButtonState();
 });
 
-
 const togglePasswordType = () => {
   passwordInput.focus();
   const iconOnShow = "url('./assets/svg/icons/login/eye.svg')";
@@ -75,43 +78,45 @@ const togglePasswordType = () => {
 };
 togglePasswordButton.addEventListener('click', togglePasswordType);
 
-
-const navigateToDashboard = async(id) => {
-    const { data } = await instance.get(`deposit-account/${id}`);
-    const status = data.response.data.status;
-    const dashboardState = status === "success" ? "active" : "inactive";
-
-    window.location = `../../dashboard.html#${dashboardState}`;
-};
-
-
-const handleLogin = async (username, password) => {
-  try {
-    // real endpoint
-    // const response = await instance.post('/auth/login', {
-    //   username,
-    //   password,
-    // });
-
-    // endpoint for test with json server mock data
-    const response = await instance.post('/auth', {
-      username,
-      password,
-    });
-
-    console.log('Login successful', response.data);
-    return response.data;
-  } catch (error) {
-    console.error('Login failed', error);
-    throw error;
-  }
-};
-
-
 const setLoadingState = (isLoading) => {
   submitButton.disabled = isLoading;
   submitText.classList.toggle('submit__text_loading', isLoading);
   submitSpinner.classList.toggle('submit__spinner_loading', isLoading);
+};
+
+const setUserDataToLocalStorage = (data) => {
+  const userData = {
+    firstName: data.firstName,
+    lastName: data.lastName,
+    idNumber: data.idNumber,
+    token: data.token,
+    refreshToken: data.refreshToken,
+  };
+
+  const localUser = new User(userData, new CustomLocalStorage());
+  localUser.save();
+};
+
+const handleLogin = async (phoneNumber, password) => {
+  try {
+    // real endpoint
+    const response = await instance.post('/auth/login', {
+      phoneNumber,
+      password,
+    });
+
+    // endpoint for test with json server mock data
+    // const response = await instance.post('/auth', {
+    //   phoneNumber,
+    //   password,
+    // });
+
+    console.log('Login successful', response.data.data);
+    return response.data.data;
+  } catch (error) {
+    console.error('Login failed', error);
+    throw error;
+  }
 };
 
 const handleSubmit = async (event) => {
@@ -125,19 +130,9 @@ const handleSubmit = async (event) => {
 
     const data = await handleLogin(phoneInputValue, passwordInputValue);
 
-    const userData = {
-      firstName: data.firstName,
-      lastName: data.lastName,
-      idNumber: data.idNumber,
-      token: data.token,
-      refreshToken: data.refreshToken,
-    };
+    setUserDataToLocalStorage(data);
 
-    const localUser = new User(userData, new CustomLocalStorage());
-    localUser.save();
-
-    navigateToDashboard(userData.idNumber);
-
+    window.location = '../../dashboard.html';
   } catch (error) {
     console.error('Error during login:', error);
     alert('نام کاربری یا رمز عبور اشتباه است.');

@@ -1,8 +1,8 @@
 // real base url
-// const BASE_URL = 'https://college.apipart.ir'
+const BASE_URL = 'https://college.apipart.ir';
 
 // base url for test with json server mock data
-const BASE_URL = 'http://localhost:3000';
+// const BASE_URL = 'http://localhost:3000';
 
 let authToken = '';
 
@@ -14,10 +14,8 @@ const instance = axios.create({
 instance.interceptors.request.use(
   (config) => {
     config.headers = {
-      ...config.headers,
       'gateway-system': 'turboFront',
       'gateway-token': authToken,
-      'Content-Type': 'application/json',
     };
     config.maxBodyLength = Infinity;
     return config;
