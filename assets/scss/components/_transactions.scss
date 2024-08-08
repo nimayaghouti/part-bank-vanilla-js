@@ -108,39 +108,35 @@
 //////////////////////////////////////////////////
 
 .table {
+  display: none;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
 
-  tr,
-  &__head {
-    display: flex;
-    justify-content: space-evenly;
+  &_active-dashboard {
+    display: table;
+  }
+
+  tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     width: 100%;
+    height: 3.8rem;
     border-radius: 0.5rem;
   }
 
   &__head {
+    display: flex;
+    border-radius: 0.5rem;
     color: white;
     background-color: var(--primary-500);
   }
 
-  tr {
-    height: 3.8rem;
-  }
-
-  // td {
-  //   @include flex();
-  // }
-
   ////////////////////////////////////////////
 
   &__body tr td:nth-child(1) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    @include flex;
   }
 
   &__body tr td:not(:nth-child(1)) {

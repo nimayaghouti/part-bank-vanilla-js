@@ -2,12 +2,8 @@ import instance, { setToken } from '../services/apiService.js';
 
 const phoneInput = document.querySelector('#phone-input');
 const passwordInput = document.querySelector('#password-input');
-const phoneInputMessage = document.querySelector(
-  '#phone-input ~ .form__validation-message'
-);
-const passwordInputMessage = document.querySelector(
-  '#password-input ~ .form__validation-message'
-);
+const phoneInputMessage = document.querySelector('#phone-input ~ .form__validation-message');
+const passwordInputMessage = document.querySelector('#password-input ~ .form__validation-message');
 const togglePasswordButton = document.querySelector('.form__toggle-password');
 const submitButton = document.querySelector('.form__submit');
 const submitText = document.querySelector('.submit__text');
@@ -63,6 +59,7 @@ passwordInput.addEventListener('input', () => {
   setSubmitButtonState();
 });
 
+
 const togglePasswordType = () => {
   passwordInput.focus();
   const iconOnShow = "url('./assets/svg/icons/login/eye.svg')";
@@ -77,6 +74,16 @@ const togglePasswordType = () => {
   }
 };
 togglePasswordButton.addEventListener('click', togglePasswordType);
+
+
+const navigateToDashboard = async(id) => {
+    const { data } = await instance.get(`deposit-account/${id}`);
+    const status = data.response.data.status;
+    const dashboardState = status === "success" ? "active" : "inactive";
+
+    window.location = `../../dashboard.html#${dashboardState}`;
+};
+
 
 const handleLogin = async (username, password) => {
   try {
@@ -99,6 +106,7 @@ const handleLogin = async (username, password) => {
     throw error;
   }
 };
+
 
 const setLoadingState = (isLoading) => {
   submitButton.disabled = isLoading;
@@ -128,7 +136,8 @@ const handleSubmit = async (event) => {
     const localUser = new User(userData, new CustomLocalStorage());
     localUser.save();
 
-    window.location.href = 'dashboard-inactive.html';
+    navigateToDashboard(userData.idNumber);
+
   } catch (error) {
     console.error('Error during login:', error);
     alert('نام کاربری یا رمز عبور اشتباه است.');
@@ -136,5 +145,4 @@ const handleSubmit = async (event) => {
     setLoadingState(false);
   }
 };
-
 submitButton.addEventListener('click', handleSubmit);
