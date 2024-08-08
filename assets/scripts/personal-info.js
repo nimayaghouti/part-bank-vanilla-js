@@ -8,5 +8,5 @@ nextButton.addEventListener('click', (event) => {
 
 previousButton.addEventListener('click', (event) => {
   event.preventDefault();
-  window.location = '../../dashboard-inactive.html';
+  window.location = '../../dashboard.html';
 });

@@ -1,4 +1,6 @@
 import instance, { setToken } from '../services/apiService.js';
+import { setUserDataToLocalStorage } from './main.js';
+import { convertNumberToPersian, convertNumberToEnglish } from './utils.js';
 
 const phoneInput = document.querySelector('#phone-input');
 const passwordInput = document.querySelector('#password-input');
@@ -13,31 +15,6 @@ const submitButton = document.querySelector('.form__submit');
 const submitText = document.querySelector('.submit__text');
 const submitSpinner = document.querySelector('.submit__spinner');
 
-const convertNumberToPersian = (number) => {
-  const PERSIAN_DIGITS = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
-  const convertedValue = number
-    .toString()
-    .replace(/\d/g, (index) => PERSIAN_DIGITS[index]);
-  phoneInput.value = convertedValue;
-};
-const convertNumberToEnglish = (number) => {
-  const ENGLISH_DIGITS = {
-    '۰': '0',
-    '۱': '1',
-    '۲': '2',
-    '۳': '3',
-    '۴': '4',
-    '۵': '5',
-    '۶': '6',
-    '۷': '7',
-    '۸': '8',
-    '۹': '9',
-  };
-
-  return number.replace(/[۰-۹]/g, (match) => {
-    return ENGLISH_DIGITS[match];
-  });
-};
 const setSubmitButtonState = () => {
   const isInputValid =
     passwordInput.checkValidity() && phoneInput.checkValidity();
@@ -45,6 +22,7 @@ const setSubmitButtonState = () => {
     ? (submitButton.disabled = false)
     : (submitButton.disabled = true);
 };
+
 const setMessageElementState = (inputElement, messageElement) => {
   if (inputElement.checkValidity()) {
     messageElement.style.opacity = '0';
@@ -53,11 +31,13 @@ const setMessageElementState = (inputElement, messageElement) => {
     messageElement.style.color = 'var(--fail-500)';
   }
 };
+
 phoneInput.addEventListener('input', (event) => {
-  convertNumberToPersian(event.target.value);
+  phoneInput.value = convertNumberToPersian(event.target.value);
   setMessageElementState(phoneInput, phoneInputMessage);
   setSubmitButtonState();
 });
+
 passwordInput.addEventListener('input', () => {
   setMessageElementState(passwordInput, passwordInputMessage);
   setSubmitButtonState();
@@ -84,19 +64,6 @@ const setLoadingState = (isLoading) => {
   submitSpinner.classList.toggle('submit__spinner_loading', isLoading);
 };
 
-const setUserDataToLocalStorage = (data) => {
-  const userData = {
-    firstName: data.firstName,
-    lastName: data.lastName,
-    idNumber: data.idNumber,
-    token: data.token,
-    refreshToken: data.refreshToken,
-  };
-
-  const localUser = new User(userData, new CustomLocalStorage());
-  localUser.save();
-};
-
 const handleLogin = async (phoneNumber, password) => {
   try {
     // real endpoint
@@ -112,7 +79,10 @@ const handleLogin = async (phoneNumber, password) => {
     // });
 
     console.log('Login successful', response.data.data);
-    return response.data.data;
+    return {
+      ...response.data.data,
+      phoneNumber: phoneNumber,
+    };
   } catch (error) {
     console.error('Login failed', error);
     throw error;

@@ -648,7 +648,6 @@ h6 {
   color: #fff;
   position: relative;
   overflow: hidden;
-  pointer-events: none;
 }
 .card::before {
   content: "";
@@ -850,6 +849,9 @@ h6 {
 .installment__wrapper {
   display: flex;
   justify-content: space-between;
+}
+.installment__number {
+  font-weight: 600;
 }
 
 .transactions {
