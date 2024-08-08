@@ -140,3 +140,29 @@ class CustomLocalStorage extends BaseStorage {
     localStorage.clear();
   }
 }
+
+/////////////////////////////////
+
+let localUser;
+
+const setUserDataToLocalStorage = (data) => {
+  const userData = {
+    firstName: data.firstName,
+    lastName: data.lastName,
+    idNumber: data.idNumber,
+    token: data.token,
+    refreshToken: data.refreshToken,
+    phoneNumber: data.phoneNumber,
+  };
+
+  localUser = new User(userData, new CustomLocalStorage());
+  localUser.save();
+};
+
+const getUserDataFromLocalStorage = () => {
+  const hashing = new CustomBase64Hashing();
+  const unhashed = hashing.unhash(localStorage.getItem('userData'));
+  return unhashed;
+};
+
+export { setUserDataToLocalStorage, getUserDataFromLocalStorage };
