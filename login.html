@@ -41,7 +41,7 @@
                 type="password"
                 id="password-input"
                 placeholder="رمز عبور"
-                pattern="[A-Za-z0-9]{8,}"
+                pattern="[A-Za-z0-9]{4,}"
                 required
               />
               <span class="form__toggle-password"></span>
@@ -67,7 +67,8 @@
       </div>
     </main>
 
-    <script src="./assets/scripts/main.js"></script>
-    <script src="./assets/scripts/login.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./assets/scripts/main.js" type="module"></script>
+    <script src="./assets/scripts/login.js" type="module"></script>
   </body>
 </html>

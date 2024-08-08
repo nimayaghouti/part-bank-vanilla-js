@@ -17,7 +17,7 @@ const handleNextButtonClick = () => {
 
   TEMP_IS_ACCOUNT_CREATED
     ? displaySnackbar()
-    : (window.location = '../../dashboard-active.html');
+    : (window.location = '../../dashboard.html');
 };
 
 nextButton.addEventListener('click', (event) => {

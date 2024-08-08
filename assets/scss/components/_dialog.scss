@@ -9,6 +9,10 @@
   border: none;
   z-index: 1;
 
+  &_active-dashboard {
+    display: none;
+  }
+
   &__note {
     font-weight: 600;
     margin: 1.5rem 0 2rem;

@@ -15,14 +15,20 @@
 
       <div class="header__user-info user-info">
         <div class="user-info__notifs">
-          <img src="./assets/svg/icons/dashboard/notification.svg" alt="avatar" />
+          <img
+            src="./assets/svg/icons/dashboard/notification.svg"
+            alt="avatar"
+          />
         </div>
         <div class="user-info__avatar">
           <img src="./assets/svg/flats/avatar.svg" alt="avatar" />
         </div>
         <div class="user-info__phone"></div>
         <div class="user-info__logout">
-          <img src="./assets/svg/icons/common/angle-down.svg" alt="angle down" />
+          <img
+            src="./assets/svg/icons/common/angle-down.svg"
+            alt="angle down"
+          />
         </div>
       </div>
     </header>
@@ -31,10 +37,10 @@
       <div class="dashboard">
         <aside class="dashboard__sidebar sidebar">
           <div class="sidebar__header">
-            <div class="sidebar__user-name">محمد جواد رحمانی نسب</div>
+            <div class="sidebar__user-name"></div>
             <div class="sidebar__user-id user-id">
               <div class="user-id__label">کد ملی:</div>
-              <div class="user-id__number">۰۹۱۲۳۴۵۶۷۸</div>
+              <div class="user-id__number"></div>
             </div>
           </div>
           <div class="sidebar__separator"></div>
@@ -173,11 +179,11 @@
               <div class="box__installment installment">
                 <div class="installment__wrapper">
                   <span class="installment__label">مبلغ قسط:</span>
-                  <span class="installment__number">۰</span>
+                  <span class="installment__number installment__number_amount">۰</span>
                 </div>
                 <div class="installment__wrapper">
                   <span class="installment__label">تاریخ سررسید:</span>
-                  <span class="installment__number">-</span>
+                  <span class="installment__number installment__number_date">-</span>
                 </div>
               </div>
 
@@ -234,6 +240,32 @@
                 </div>
               </div>
             </div>
+
+            <table class="transactions__table table">
+              <thead class="table__head">
+                <tr>
+                  <td>نوع تراکنش</td>
+                  <td>تاریخ و ساعت تراکنش</td>
+                  <td>مبلغ تراکنش</td>
+                </tr>
+              </thead>
+
+              <tbody class="table__body">
+                <!-- dynamic data -->
+              </tbody>
+            </table>
+
+            <div class="transactions__pagination pagination">
+              <button class="pagination__previous" title="قبلی">
+                <img src="./assets/svg/icons/common/angle-right.svg" />
+              </button>
+              <div class="pagination__dynamic-buttons-wrapper">
+                <!-- dynamic page number buttons -->
+              </div>
+              <button class="pagination__next" title="بعدی">
+                <img src="./assets/svg/icons/common/angle-left.svg" />
+              </button>
+            </div>
           </div>
 
           <div class="info__dialog dialog">
@@ -247,7 +279,8 @@
       </div>
     </main>
 
-    <script src="./assets/scripts/main.js"></script>
-    <script src="./assets/scripts/dashboard-inactive.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./assets/scripts/main.js" type="module"></script>
+    <script src="./assets/scripts/dashboard.js" type="module"></script>
   </body>
 </html>

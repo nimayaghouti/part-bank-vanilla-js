@@ -9,7 +9,6 @@
   color: #fff;
   position: relative;
   overflow: hidden;
-  pointer-events: none; // for phase 1
 
   &::before {
     content: '';
